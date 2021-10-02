@@ -158,19 +158,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 950  3900 950 
 $Comp
-L power:GND #PWR?
-U 1 1 6153BB70
-P 3350 2300
-F 0 "#PWR?" H 3350 2050 50  0001 C CNN
-F 1 "GND" H 3355 2127 50  0000 C CNN
-F 2 "" H 3350 2300 50  0001 C CNN
-F 3 "" H 3350 2300 50  0001 C CNN
-	1    3350 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 2300 3350 2000
-$Comp
 L Device:C C?
 U 1 1 6153D4FA
 P 2550 1700
@@ -254,13 +241,40 @@ Wire Wire Line
 	4500 1450 4650 1450
 Wire Wire Line
 	4650 1450 4650 1350
-Wire Wire Line
-	4650 1450 4650 1550
 Connection ~ 4650 1450
 Wire Wire Line
 	3900 1250 4350 1250
 Wire Wire Line
-	4350 1250 4350 1650
-Text Notes 4450 1700 0    50   ~ 0
-mosfet here
+	4650 1450 4650 1550
+Wire Wire Line
+	4350 1250 4350 1750
+$Comp
+L Transistor_FET:BUK7M33-60EX Q?
+U 1 1 6158AC0E
+P 4550 1750
+F 0 "Q?" H 4754 1796 50  0000 L CNN
+F 1 "BUK7M33-60EX" H 4754 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 4750 1675 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf" V 4550 1750 50  0001 L CNN
+	1    4550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2000 4650 2000
+Wire Wire Line
+	4650 2000 4650 1950
+Connection ~ 4000 2000
+$Comp
+L power:GND #PWR?
+U 1 1 6153BB70
+P 3350 2150
+F 0 "#PWR?" H 3350 1900 50  0001 C CNN
+F 1 "GND" H 3355 1977 50  0000 C CNN
+F 2 "" H 3350 2150 50  0001 C CNN
+F 3 "" H 3350 2150 50  0001 C CNN
+	1    3350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2150 3350 2000
 $EndSCHEMATC

@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Heater Board"
 Date ""
 Rev ""
-Comp ""
+Comp "MRDT"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -231,8 +231,6 @@ Wire Wire Line
 	2300 950  2350 950 
 Wire Wire Line
 	2650 950  2750 950 
-Text Notes 1900 1150 0    50   ~ 0
-Teensy connects here
 Wire Wire Line
 	3900 1100 4500 1100
 Wire Wire Line
@@ -259,11 +257,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf" V 4550 17
 	1    4550 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 2000 4650 2000
-Wire Wire Line
-	4650 2000 4650 1950
-Connection ~ 4000 2000
 $Comp
 L power:GND #PWR?
 U 1 1 6153BB70
@@ -277,4 +270,122 @@ F 3 "" H 3350 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 2150 3350 2000
+$Comp
+L MRDT_Shields:Teensy4.1_DEV-16771 U?
+U 1 1 6158A854
+P 3350 4750
+F 0 "U?" H 3350 6917 50  0000 C CNN
+F 1 "Teensy4.1_DEV-16771" H 3350 6826 50  0000 C CNN
+F 2 "MODULE_DEV-16771" H 5450 4450 50  0001 L BNN
+F 3 "" H 3350 4750 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 5450 4200 50  0001 L BNN "STANDARD"
+F 5 "4.07mm" H 5700 4000 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "SparkFun Electronics" H 5650 3850 50  0001 L BNN "MANUFACTURER"
+F 7 "4.1" H 3050 2550 50  0001 L BNN "PARTREV"
+	1    3350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61591C99
+P 4350 6550
+F 0 "#PWR?" H 4350 6300 50  0001 C CNN
+F 1 "GND" V 4355 6422 50  0000 R CNN
+F 2 "" H 4350 6550 50  0001 C CNN
+F 3 "" H 4350 6550 50  0001 C CNN
+	1    4350 6550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 6550 4150 6550
+$Comp
+L power:+5V #PWR?
+U 1 1 61592E25
+P 4250 2750
+F 0 "#PWR?" H 4250 2600 50  0001 C CNN
+F 1 "+5V" H 4265 2923 50  0000 C CNN
+F 2 "" H 4250 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4250 2850
+Wire Wire Line
+	4250 2850 4150 2850
+Wire Wire Line
+	4150 4250 4550 4250
+Wire Wire Line
+	4550 4250 4550 2450
+Wire Wire Line
+	4550 2450 2350 2450
+Wire Wire Line
+	2350 2450 2350 1100
+Wire Wire Line
+	2350 1100 2750 1100
+Wire Wire Line
+	4650 1950 6000 1950
+Wire Wire Line
+	4000 2000 4000 2100
+Wire Wire Line
+	4000 2100 6000 2100
+Connection ~ 4000 2000
+NoConn ~ 4150 2950
+NoConn ~ 4150 3050
+NoConn ~ 4150 3150
+NoConn ~ 4150 3350
+NoConn ~ 4150 3450
+NoConn ~ 4150 3550
+NoConn ~ 4150 3650
+NoConn ~ 4150 3750
+NoConn ~ 4150 3950
+NoConn ~ 4150 4050
+NoConn ~ 4150 4350
+NoConn ~ 4150 4450
+NoConn ~ 4150 4550
+NoConn ~ 4150 4750
+NoConn ~ 4150 4850
+NoConn ~ 4150 4950
+NoConn ~ 4150 5150
+NoConn ~ 4150 5250
+NoConn ~ 4150 5550
+NoConn ~ 4150 5650
+NoConn ~ 4150 5750
+NoConn ~ 4150 5850
+NoConn ~ 4150 5950
+NoConn ~ 4150 6050
+NoConn ~ 4150 6150
+NoConn ~ 4150 6250
+NoConn ~ 4150 6350
+NoConn ~ 4150 6650
+NoConn ~ 2550 6350
+NoConn ~ 2550 6250
+NoConn ~ 2550 6150
+NoConn ~ 2550 6050
+NoConn ~ 2550 5950
+NoConn ~ 2550 5850
+NoConn ~ 2550 5750
+NoConn ~ 2550 5650
+NoConn ~ 2550 5550
+NoConn ~ 2550 5350
+NoConn ~ 2550 5250
+NoConn ~ 2550 5150
+NoConn ~ 2550 5050
+NoConn ~ 2550 4850
+NoConn ~ 2550 4750
+NoConn ~ 2550 4650
+NoConn ~ 2550 4550
+NoConn ~ 2550 4450
+NoConn ~ 2550 4350
+NoConn ~ 2550 4250
+NoConn ~ 2550 4150
+NoConn ~ 2550 4050
+NoConn ~ 2550 3950
+NoConn ~ 2550 3350
+NoConn ~ 2550 3450
+NoConn ~ 2550 3650
+Text Notes 1700 3800 0    50   ~ 0
+ethernet connection?
+Text Notes 5150 2050 0    50   ~ 0
+thermistor and nichrome wire will loop in here
 $EndSCHEMATC
