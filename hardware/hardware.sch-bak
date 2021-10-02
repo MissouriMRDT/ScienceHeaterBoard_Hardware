@@ -261,4 +261,6 @@ Wire Wire Line
 	3900 1250 4350 1250
 Wire Wire Line
 	4350 1250 4350 1650
+Text Notes 4450 1700 0    50   ~ 0
+mosfet here
 $EndSCHEMATC
