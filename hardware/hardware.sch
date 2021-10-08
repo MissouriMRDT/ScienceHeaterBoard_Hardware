@@ -48,89 +48,10 @@ F 3 "" H 1300 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 900  1100 900 
-Text GLabel 1300 1500 2    50   Input ~ 0
+Text GLabel 1200 2100 3    50   Input ~ 0
 pv
 Wire Wire Line
-	1300 1500 1100 1500
-$Comp
-L Device:C C6
-U 1 1 614D2AA6
-P 1100 1850
-F 0 "C6" H 985 1804 50  0000 R CNN
-F 1 "C" H 985 1895 50  0000 R CNN
-F 2 "" H 1138 1700 50  0001 C CNN
-F 3 "~" H 1100 1850 50  0001 C CNN
-	1    1100 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 1700 1100 1500
-Connection ~ 1100 1500
-Wire Wire Line
-	1100 2000 1100 2100
-$Comp
-L power:GND #PWR01
-U 1 1 614D4A55
-P 1100 2100
-F 0 "#PWR01" H 1100 1850 50  0001 C CNN
-F 1 "GND" H 1105 1927 50  0000 C CNN
-F 2 "" H 1100 2100 50  0001 C CNN
-F 3 "" H 1100 2100 50  0001 C CNN
-	1    1100 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 614D88F5
-P 9350 5600
-F 0 "R4" V 9143 5600 50  0000 C CNN
-F 1 "R1" V 9234 5600 50  0000 C CNN
-F 2 "" V 9280 5600 50  0001 C CNN
-F 3 "~" H 9350 5600 50  0001 C CNN
-	1    9350 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9600 6000 9500 6000
-$Comp
-L Device:Thermistor TH2
-U 1 1 614D97E1
-P 9300 6000
-F 0 "TH2" V 9058 6000 50  0000 C CNN
-F 1 "Thermistor" V 9149 6000 50  0000 C CNN
-F 2 "" H 9300 6000 50  0001 C CNN
-F 3 "~" H 9300 6000 50  0001 C CNN
-	1    9300 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8950 6000 9100 6000
-Wire Wire Line
-	8950 5600 9200 5600
-$Comp
-L power:GND #PWR09
-U 1 1 614DAA27
-P 8950 6000
-F 0 "#PWR09" H 8950 5750 50  0001 C CNN
-F 1 "GND" V 8955 5872 50  0000 R CNN
-F 2 "" H 8950 6000 50  0001 C CNN
-F 3 "" H 8950 6000 50  0001 C CNN
-	1    8950 6000
-	0    1    1    0   
-$EndComp
-Text Notes 8800 5600 0    50   ~ 0
-Vin
-Wire Wire Line
-	9500 5600 9600 5600
-Wire Wire Line
-	9600 5600 9600 6000
-Connection ~ 9600 5600
-Wire Wire Line
-	9600 5600 9750 5600
-Text Notes 9600 5650 0    50   ~ 0
-Vout=Vin * [Rthermo/\n        (Rthermo + R1)}
-Text Notes 8650 5300 0    50   ~ 0
-Thermistor Measurement example
+	1200 2100 1200 1900
 $Comp
 L MRDT_ICs:LT1910 U2
 U 1 1 61539417
@@ -605,7 +526,7 @@ Wire Wire Line
 	3950 1950 5450 1950
 NoConn ~ 3250 5700
 $Comp
-L MRDT_Shields:Teensy4.1_DEV-16771 U1
+L hardware-rescue:Teensy4.1_DEV-16771-MRDT_Shields U1
 U 1 1 6158A854
 P 4050 4900
 F 0 "U1" H 4050 7067 50  0000 C CNN
@@ -647,4 +568,19 @@ Wire Wire Line
 	5650 2600 6650 2600
 Text Notes 6050 1850 0    47   ~ 0
 A17 / A16 = TH1 / (TH1 + Nichrome Resistance)
+$Comp
+L Device:Thermistor_NTC TH3
+U 1 1 61610BEA
+P 1200 1750
+F 0 "TH3" H 1047 1704 50  0000 R CNN
+F 1 "Rmin = 840" H 1047 1795 50  0000 R CNN
+F 2 "" H 1200 1800 50  0001 C CNN
+F 3 "~" H 1200 1800 50  0001 C CNN
+	1    1200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1500 1200 1500
+Wire Wire Line
+	1200 1500 1200 1600
 $EndSCHEMATC
