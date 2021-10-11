@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MRDT_Connectors:AndersonPP Conn1
+L hardware-rescue:AndersonPP-MRDT_Connectors Conn1
 U 4 1 614D2045
 P 700 1600
 F 0 "Conn1" H 908 1987 60  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 550 1050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MRDT_Connectors:AndersonPP Conn1
+L hardware-rescue:AndersonPP-MRDT_Connectors Conn1
 U 1 1 614D689F
 P 700 1000
 F 0 "Conn1" H 908 1387 60  0000 C CNN
@@ -53,7 +53,7 @@ pv
 Wire Wire Line
 	1200 2100 1200 1900
 $Comp
-L MRDT_ICs:LT1910 U2
+L hardware-rescue:LT1910-MRDT_ICs U2
 U 1 1 61539417
 P 2250 1350
 F 0 "U2" H 2625 2037 60  0000 C CNN
@@ -191,22 +191,8 @@ F 3 "" H 2650 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 2150 2650 2000
-$Comp
-L power:GND #PWR06
-U 1 1 61591C99
-P 5050 6700
-F 0 "#PWR06" H 5050 6450 50  0001 C CNN
-F 1 "GND" V 5055 6572 50  0000 R CNN
-F 2 "" H 5050 6700 50  0001 C CNN
-F 3 "" H 5050 6700 50  0001 C CNN
-	1    5050 6700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 6700 4950 6700
 Wire Wire Line
 	1650 1100 2050 1100
-Connection ~ 3300 2000
 NoConn ~ 4850 3100
 NoConn ~ 4850 3200
 NoConn ~ 4850 3300
@@ -275,18 +261,14 @@ Wire Wire Line
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 615942DB
-P 6300 2350
-F 0 "TH1" V 6010 2350 50  0000 C CNN
-F 1 "Thermistor_NTC" V 6101 2350 50  0000 C CNN
-F 2 "" H 6300 2400 50  0001 C CNN
-F 3 "~" H 6300 2400 50  0001 C CNN
-	1    6300 2350
+P 5700 1950
+F 0 "TH1" V 5410 1950 50  0000 C CNN
+F 1 "Thermistor_NTC" V 5501 1950 50  0000 C CNN
+F 2 "" H 5700 2000 50  0001 C CNN
+F 3 "~" H 5700 2000 50  0001 C CNN
+	1    5700 1950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3300 2000 3300 2350
-Text Notes 7000 2200 0    50   ~ 0
-nichrome connection point
 Wire Wire Line
 	5250 2600 1650 2600
 Wire Wire Line
@@ -295,15 +277,10 @@ Wire Wire Line
 	4850 6800 4950 6800
 Wire Wire Line
 	4950 6800 4950 6700
-Connection ~ 4950 6700
 Wire Wire Line
 	4950 6700 4850 6700
-Text Notes 1550 4100 0    50   ~ 0
-ethernet connection to teensy
-Wire Wire Line
-	3250 3900 1950 3900
 $Comp
-L MRDT_Devices:OKI U3
+L hardware-rescue:OKI-MRDT_Devices U3
 U 1 1 615CF578
 P 6800 3300
 F 0 "U3" H 6850 3250 60  0001 C CNN
@@ -522,8 +499,6 @@ Wire Wire Line
 	6400 4850 6700 4850
 Wire Wire Line
 	7300 4850 7550 4850
-Wire Wire Line
-	3950 1950 5450 1950
 NoConn ~ 3250 5700
 $Comp
 L hardware-rescue:Teensy4.1_DEV-16771-MRDT_Shields U1
@@ -541,33 +516,15 @@ F 7 "4.1" H 3750 2700 50  0001 L BNN "PARTREV"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 2350 6650 2350
-Connection ~ 6650 2350
-Wire Wire Line
-	6650 2350 7450 2350
-Wire Wire Line
 	5250 4400 5250 2600
 Wire Wire Line
 	4850 4400 5250 4400
 Wire Wire Line
-	4850 5700 5450 5700
-Wire Wire Line
-	5450 1950 5450 5700
-Wire Wire Line
-	3300 2350 6150 2350
-Connection ~ 5450 1950
-Wire Wire Line
-	5450 1950 7150 1950
-Wire Wire Line
 	4850 5800 5650 5800
 Wire Wire Line
-	5650 5800 5650 2600
+	5650 5800 5650 2250
 Wire Wire Line
-	6650 2350 6650 2600
-Wire Wire Line
-	5650 2600 6650 2600
-Text Notes 6050 1850 0    47   ~ 0
-A17 / A16 = TH1 / (TH1 + Nichrome Resistance)
+	5650 2250 6650 2250
 $Comp
 L Device:Thermistor_NTC TH3
 U 1 1 61610BEA
@@ -583,4 +540,166 @@ Wire Wire Line
 	1100 1500 1200 1500
 Wire Wire Line
 	1200 1500 1200 1600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6164E01B
+P 7150 1950
+F 0 "TP?" V 7104 2138 50  0000 L CNN
+F 1 "TestPoint" V 7195 2138 50  0000 L CNN
+F 2 "" H 7350 1950 50  0001 C CNN
+F 3 "~" H 7350 1950 50  0001 C CNN
+	1    7150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 616506C1
+P 7450 2350
+F 0 "TP?" V 7404 2538 50  0000 L CNN
+F 1 "TestPoint" V 7495 2538 50  0000 L CNN
+F 2 "" H 7650 2350 50  0001 C CNN
+F 3 "~" H 7650 2350 50  0001 C CNN
+	1    7450 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:RJ45_LED_Shielded J?
+U 1 1 61651929
+P 1100 4550
+F 0 "J?" V 1054 5080 50  0000 L CNN
+F 1 "RJ45_LED_Shielded" V 1145 5080 50  0000 L CNN
+F 2 "" V 1100 4575 50  0001 C CNN
+F 3 "~" V 1100 4575 50  0001 C CNN
+	1    1100 4550
+	0    1    1    0   
+$EndComp
+NoConn ~ 3250 3900
+$Comp
+L Connector:6P6C J?
+U 1 1 61663DF2
+P 1000 5750
+F 0 "J?" V 1103 6180 50  0000 L CNN
+F 1 "6P6C" V 1012 6180 50  0000 L CNN
+F 2 "" V 1000 5775 50  0001 C CNN
+F 3 "~" V 1000 5775 50  0001 C CNN
+	1    1000 5750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1300 4950 1300 5150
+Wire Wire Line
+	600  4550 600  4800
+$Comp
+L power:GND #PWR?
+U 1 1 6167F4AF
+P 600 4800
+F 0 "#PWR?" H 600 4550 50  0001 C CNN
+F 1 "GND" H 605 4627 50  0000 C CNN
+F 2 "" H 600 4800 50  0001 C CNN
+F 3 "" H 600 4800 50  0001 C CNN
+	1    600  4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 616800CF
+P 1650 5150
+F 0 "C?" H 1742 5196 50  0000 L CNN
+F 1 "C_Small" H 1742 5105 50  0000 L CNN
+F 2 "" H 1650 5150 50  0001 C CNN
+F 3 "~" H 1650 5150 50  0001 C CNN
+	1    1650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5150 1200 5150
+Wire Wire Line
+	1650 5050 1650 5000
+Wire Wire Line
+	800  4950 800  5350
+Wire Wire Line
+	1000 5250 1000 5350
+Wire Wire Line
+	1200 5150 1200 5350
+Wire Wire Line
+	1300 5200 1300 5350
+Wire Wire Line
+	1000 5250 1500 5250
+Wire Wire Line
+	1650 5000 1200 5000
+Wire Wire Line
+	1200 5000 1200 4950
+Connection ~ 1200 5000
+Wire Wire Line
+	900  4950 900  5000
+Wire Wire Line
+	900  5000 1200 5000
+Wire Wire Line
+	1300 5200 1100 5200
+Wire Wire Line
+	1100 5200 1100 4950
+Wire Wire Line
+	900  5350 900  5050
+Wire Wire Line
+	900  5050 1000 5050
+Wire Wire Line
+	1000 5050 1000 4950
+Wire Wire Line
+	1100 5350 1100 5300
+Wire Wire Line
+	1100 5300 1850 5300
+Wire Wire Line
+	1850 5300 1850 4150
+Wire Wire Line
+	1850 4150 1500 4150
+Wire Wire Line
+	1400 4150 1400 4100
+Wire Wire Line
+	1400 4100 1950 4100
+Wire Wire Line
+	1950 4100 1950 5250
+Wire Wire Line
+	1950 5250 1650 5250
+Connection ~ 1650 5250
+Wire Wire Line
+	1500 4950 1500 5250
+Connection ~ 1500 5250
+Wire Wire Line
+	1500 5250 1650 5250
+NoConn ~ 1400 4950
+NoConn ~ 800  4150
+NoConn ~ 900  4150
+Wire Wire Line
+	3300 2350 3300 2000
+Connection ~ 3300 2000
+Wire Wire Line
+	3300 2350 7450 2350
+Wire Wire Line
+	6650 2250 6650 1950
+Connection ~ 6650 1950
+Wire Wire Line
+	6650 1950 7150 1950
+Text Label 700  4050 0    50   ~ 0
+EthernetMadness
+Wire Wire Line
+	3950 1950 5550 1950
+NoConn ~ 4850 5700
+$Comp
+L power:GND #PWR06
+U 1 1 61591C99
+P 4950 6950
+F 0 "#PWR06" H 4950 6700 50  0001 C CNN
+F 1 "GND" V 4955 6822 50  0000 R CNN
+F 2 "" H 4950 6950 50  0001 C CNN
+F 3 "" H 4950 6950 50  0001 C CNN
+	1    4950 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6950 4950 6800
+Connection ~ 4950 6800
+Wire Wire Line
+	5850 1950 6650 1950
+Text Notes 7000 2200 0    50   ~ 0
+nichrome connection point
 $EndSCHEMATC
