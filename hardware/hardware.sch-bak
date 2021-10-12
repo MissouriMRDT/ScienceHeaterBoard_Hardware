@@ -191,19 +191,6 @@ F 3 "" H 2650 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 2150 2650 2000
-$Comp
-L power:GND #PWR06
-U 1 1 61591C99
-P 5050 6700
-F 0 "#PWR06" H 5050 6450 50  0001 C CNN
-F 1 "GND" V 5055 6572 50  0000 R CNN
-F 2 "" H 5050 6700 50  0001 C CNN
-F 3 "" H 5050 6700 50  0001 C CNN
-	1    5050 6700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 6700 4950 6700
 Wire Wire Line
 	1650 1100 2050 1100
 NoConn ~ 4850 3100
@@ -274,16 +261,14 @@ Wire Wire Line
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 615942DB
-P 6000 1950
-F 0 "TH1" V 5710 1950 50  0000 C CNN
-F 1 "Thermistor_NTC" V 5801 1950 50  0000 C CNN
-F 2 "" H 6000 2000 50  0001 C CNN
-F 3 "~" H 6000 2000 50  0001 C CNN
-	1    6000 1950
+P 5700 1950
+F 0 "TH1" V 5410 1950 50  0000 C CNN
+F 1 "Thermistor_NTC" V 5501 1950 50  0000 C CNN
+F 2 "" H 5700 2000 50  0001 C CNN
+F 3 "~" H 5700 2000 50  0001 C CNN
+	1    5700 1950
 	0    1    1    0   
 $EndComp
-Text Notes 7000 2200 0    50   ~ 0
-nichrome connection point
 Wire Wire Line
 	5250 2600 1650 2600
 Wire Wire Line
@@ -292,7 +277,6 @@ Wire Wire Line
 	4850 6800 4950 6800
 Wire Wire Line
 	4950 6800 4950 6700
-Connection ~ 4950 6700
 Wire Wire Line
 	4950 6700 4850 6700
 $Comp
@@ -515,8 +499,6 @@ Wire Wire Line
 	6400 4850 6700 4850
 Wire Wire Line
 	7300 4850 7550 4850
-Wire Wire Line
-	3950 1950 5450 1950
 NoConn ~ 3250 5700
 $Comp
 L hardware-rescue:Teensy4.1_DEV-16771-MRDT_Shields U1
@@ -538,20 +520,11 @@ Wire Wire Line
 Wire Wire Line
 	4850 4400 5250 4400
 Wire Wire Line
-	4850 5700 5450 5700
-Wire Wire Line
-	5450 1950 5450 5700
-Connection ~ 5450 1950
-Wire Wire Line
-	5450 1950 5850 1950
-Wire Wire Line
 	4850 5800 5650 5800
 Wire Wire Line
 	5650 5800 5650 2250
 Wire Wire Line
 	5650 2250 6650 2250
-Text Notes 6050 1850 0    47   ~ 0
-A17 / A16 = TH1 / (TH1 + Nichrome Resistance)
 $Comp
 L Device:Thermistor_NTC TH3
 U 1 1 61610BEA
@@ -697,8 +670,6 @@ NoConn ~ 1400 4950
 NoConn ~ 800  4150
 NoConn ~ 900  4150
 Wire Wire Line
-	6150 1950 6650 1950
-Wire Wire Line
 	3300 2350 3300 2000
 Connection ~ 3300 2000
 Wire Wire Line
@@ -708,4 +679,27 @@ Wire Wire Line
 Connection ~ 6650 1950
 Wire Wire Line
 	6650 1950 7150 1950
+Text Label 700  4050 0    50   ~ 0
+EthernetMadness
+Wire Wire Line
+	3950 1950 5550 1950
+NoConn ~ 4850 5700
+$Comp
+L power:GND #PWR06
+U 1 1 61591C99
+P 4950 6950
+F 0 "#PWR06" H 4950 6700 50  0001 C CNN
+F 1 "GND" V 4955 6822 50  0000 R CNN
+F 2 "" H 4950 6950 50  0001 C CNN
+F 3 "" H 4950 6950 50  0001 C CNN
+	1    4950 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6950 4950 6800
+Connection ~ 4950 6800
+Wire Wire Line
+	5850 1950 6650 1950
+Text Notes 7000 2200 0    50   ~ 0
+nichrome connection point
 $EndSCHEMATC
