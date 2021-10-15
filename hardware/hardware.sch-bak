@@ -541,10 +541,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 1500 1200 1600
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 6164E01B
 P 7150 1950
-F 0 "TP?" V 7104 2138 50  0000 L CNN
+F 0 "TP1" V 7104 2138 50  0000 L CNN
 F 1 "TestPoint" V 7195 2138 50  0000 L CNN
 F 2 "" H 7350 1950 50  0001 C CNN
 F 3 "~" H 7350 1950 50  0001 C CNN
@@ -552,10 +552,10 @@ F 3 "~" H 7350 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP2
 U 1 1 616506C1
 P 7450 2350
-F 0 "TP?" V 7404 2538 50  0000 L CNN
+F 0 "TP2" V 7404 2538 50  0000 L CNN
 F 1 "TestPoint" V 7495 2538 50  0000 L CNN
 F 2 "" H 7650 2350 50  0001 C CNN
 F 3 "~" H 7650 2350 50  0001 C CNN
@@ -563,112 +563,33 @@ F 3 "~" H 7650 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:RJ45_LED_Shielded J?
+L Connector:RJ45_LED_Shielded J2
 U 1 1 61651929
-P 1100 4550
-F 0 "J?" V 1054 5080 50  0000 L CNN
-F 1 "RJ45_LED_Shielded" V 1145 5080 50  0000 L CNN
-F 2 "" V 1100 4575 50  0001 C CNN
-F 3 "~" V 1100 4575 50  0001 C CNN
-	1    1100 4550
+P 1350 4550
+F 0 "J2" V 750 4450 50  0000 L CNN
+F 1 "RJ45_LED_Shielded" V 850 4100 50  0000 L CNN
+F 2 "" V 1350 4575 50  0001 C CNN
+F 3 "~" V 1350 4575 50  0001 C CNN
+	1    1350 4550
 	0    1    1    0   
 $EndComp
 NoConn ~ 3250 3900
 $Comp
-L Connector:6P6C J?
-U 1 1 61663DF2
-P 1000 5750
-F 0 "J?" V 1103 6180 50  0000 L CNN
-F 1 "6P6C" V 1012 6180 50  0000 L CNN
-F 2 "" V 1000 5775 50  0001 C CNN
-F 3 "~" V 1000 5775 50  0001 C CNN
-	1    1000 5750
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	1300 4950 1300 5150
-Wire Wire Line
-	600  4550 600  4800
-$Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 6167F4AF
-P 600 4800
-F 0 "#PWR?" H 600 4550 50  0001 C CNN
-F 1 "GND" H 605 4627 50  0000 C CNN
-F 2 "" H 600 4800 50  0001 C CNN
-F 3 "" H 600 4800 50  0001 C CNN
-	1    600  4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 616800CF
-P 1650 5150
-F 0 "C?" H 1742 5196 50  0000 L CNN
-F 1 "C_Small" H 1742 5105 50  0000 L CNN
-F 2 "" H 1650 5150 50  0001 C CNN
-F 3 "~" H 1650 5150 50  0001 C CNN
-	1    1650 5150
+P 800 4600
+F 0 "#PWR01" H 800 4350 50  0001 C CNN
+F 1 "GND" H 805 4427 50  0000 C CNN
+F 2 "" H 800 4600 50  0001 C CNN
+F 3 "" H 800 4600 50  0001 C CNN
+	1    800  4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 5150 1200 5150
-Wire Wire Line
-	1650 5050 1650 5000
-Wire Wire Line
-	800  4950 800  5350
-Wire Wire Line
-	1000 5250 1000 5350
-Wire Wire Line
-	1200 5150 1200 5350
-Wire Wire Line
-	1300 5200 1300 5350
-Wire Wire Line
-	1000 5250 1500 5250
-Wire Wire Line
-	1650 5000 1200 5000
-Wire Wire Line
-	1200 5000 1200 4950
-Connection ~ 1200 5000
-Wire Wire Line
-	900  4950 900  5000
-Wire Wire Line
-	900  5000 1200 5000
-Wire Wire Line
-	1300 5200 1100 5200
-Wire Wire Line
-	1100 5200 1100 4950
-Wire Wire Line
-	900  5350 900  5050
-Wire Wire Line
-	900  5050 1000 5050
-Wire Wire Line
-	1000 5050 1000 4950
-Wire Wire Line
-	1100 5350 1100 5300
-Wire Wire Line
-	1100 5300 1850 5300
-Wire Wire Line
-	1850 5300 1850 4150
-Wire Wire Line
-	1850 4150 1500 4150
-Wire Wire Line
-	1400 4150 1400 4100
-Wire Wire Line
-	1400 4100 1950 4100
-Wire Wire Line
-	1950 4100 1950 5250
-Wire Wire Line
-	1950 5250 1650 5250
-Connection ~ 1650 5250
-Wire Wire Line
-	1500 4950 1500 5250
-Connection ~ 1500 5250
-Wire Wire Line
-	1500 5250 1650 5250
-NoConn ~ 1400 4950
-NoConn ~ 800  4150
-NoConn ~ 900  4150
+	2000 4100 1750 4100
+NoConn ~ 1650 4950
+NoConn ~ 1050 4150
+NoConn ~ 1150 4150
 Wire Wire Line
 	3300 2350 3300 2000
 Connection ~ 3300 2000
@@ -679,8 +600,6 @@ Wire Wire Line
 Connection ~ 6650 1950
 Wire Wire Line
 	6650 1950 7150 1950
-Text Label 700  4050 0    50   ~ 0
-EthernetMadness
 Wire Wire Line
 	3950 1950 5550 1950
 NoConn ~ 4850 5700
@@ -702,4 +621,91 @@ Wire Wire Line
 	5850 1950 6650 1950
 Text Notes 7000 2200 0    50   ~ 0
 nichrome connection point
+Wire Wire Line
+	800  4600 800  4550
+Wire Wire Line
+	800  4550 850  4550
+Wire Wire Line
+	1450 4950 1450 5050
+Wire Wire Line
+	1450 5050 1150 5050
+Wire Wire Line
+	1150 5050 1150 4950
+Wire Wire Line
+	1450 5050 1450 5150
+$Comp
+L Device:C_Small C6
+U 1 1 6167296B
+P 1450 5250
+F 0 "C6" H 1600 5250 50  0000 L CNN
+F 1 "0.1uF" H 1550 5150 50  0000 L CNN
+F 2 "" H 1450 5250 50  0001 C CNN
+F 3 "~" H 1450 5250 50  0001 C CNN
+	1    1450 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 5050
+Wire Wire Line
+	1250 4950 1250 5500
+Wire Wire Line
+	1250 5500 1150 5500
+Wire Wire Line
+	1450 5800 1550 5800
+Wire Wire Line
+	1550 5800 1550 4950
+Wire Wire Line
+	1450 6000 1450 5800
+Wire Wire Line
+	1350 6000 1350 5700
+Wire Wire Line
+	1150 5500 1150 6000
+Wire Wire Line
+	1050 4950 1050 6000
+$Comp
+L Connector:6P6C J1
+U 1 1 61663DF2
+P 1250 6400
+F 0 "J1" V 1353 6830 50  0000 L CNN
+F 1 "6P6C" V 1262 6830 50  0000 L CNN
+F 2 "" V 1250 6425 50  0001 C CNN
+F 3 "~" V 1250 6425 50  0001 C CNN
+	1    1250 6400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1250 5600 1250 6000
+Wire Wire Line
+	1750 4950 1750 5600
+Connection ~ 1450 5600
+Wire Wire Line
+	1250 5600 1450 5600
+Wire Wire Line
+	1450 5600 1450 5350
+Wire Wire Line
+	1450 5600 1750 5600
+Wire Wire Line
+	1550 6000 1550 5900
+Wire Wire Line
+	1550 5900 1650 5900
+Wire Wire Line
+	1650 5900 1650 5500
+Wire Wire Line
+	1650 5500 1350 5500
+Wire Wire Line
+	1350 5500 1350 4950
+Wire Wire Line
+	1750 4100 1750 4150
+Wire Wire Line
+	1750 5600 2000 5600
+Wire Wire Line
+	2000 5600 2000 4100
+Connection ~ 1750 5600
+Wire Wire Line
+	2100 5700 2100 4000
+Wire Wire Line
+	2100 4000 1650 4000
+Wire Wire Line
+	1350 5700 2100 5700
+Wire Wire Line
+	1650 4000 1650 4150
 $EndSCHEMATC
