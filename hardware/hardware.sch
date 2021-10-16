@@ -258,17 +258,6 @@ Wire Wire Line
 	3150 3400 3150 3500
 Wire Wire Line
 	3150 3500 3250 3500
-$Comp
-L Device:Thermistor_NTC TH1
-U 1 1 615942DB
-P 5700 1950
-F 0 "TH1" V 5410 1950 50  0000 C CNN
-F 1 "Thermistor_NTC" V 5501 1950 50  0000 C CNN
-F 2 "" H 5700 2000 50  0001 C CNN
-F 3 "~" H 5700 2000 50  0001 C CNN
-	1    5700 1950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5250 2600 1650 2600
 Wire Wire Line
@@ -523,8 +512,6 @@ Wire Wire Line
 	4850 5800 5650 5800
 Wire Wire Line
 	5650 5800 5650 2250
-Wire Wire Line
-	5650 2250 6650 2250
 $Comp
 L Device:Thermistor_NTC TH3
 U 1 1 61610BEA
@@ -540,28 +527,6 @@ Wire Wire Line
 	1100 1500 1200 1500
 Wire Wire Line
 	1200 1500 1200 1600
-$Comp
-L Connector:TestPoint TP1
-U 1 1 6164E01B
-P 7150 1950
-F 0 "TP1" V 7104 2138 50  0000 L CNN
-F 1 "TestPoint" V 7195 2138 50  0000 L CNN
-F 2 "" H 7350 1950 50  0001 C CNN
-F 3 "~" H 7350 1950 50  0001 C CNN
-	1    7150 1950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 616506C1
-P 7450 2350
-F 0 "TP2" V 7404 2538 50  0000 L CNN
-F 1 "TestPoint" V 7495 2538 50  0000 L CNN
-F 2 "" H 7650 2350 50  0001 C CNN
-F 3 "~" H 7650 2350 50  0001 C CNN
-	1    7450 2350
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:RJ45_LED_Shielded J2
 U 1 1 61651929
@@ -593,15 +558,6 @@ NoConn ~ 1150 4150
 Wire Wire Line
 	3300 2350 3300 2000
 Connection ~ 3300 2000
-Wire Wire Line
-	3300 2350 7450 2350
-Wire Wire Line
-	6650 2250 6650 1950
-Connection ~ 6650 1950
-Wire Wire Line
-	6650 1950 7150 1950
-Wire Wire Line
-	3950 1950 5550 1950
 NoConn ~ 4850 5700
 $Comp
 L power:GND #PWR06
@@ -617,10 +573,6 @@ $EndComp
 Wire Wire Line
 	4950 6950 4950 6800
 Connection ~ 4950 6800
-Wire Wire Line
-	5850 1950 6650 1950
-Text Notes 7000 2200 0    50   ~ 0
-nichrome connection point
 Wire Wire Line
 	800  4600 800  4550
 Wire Wire Line
@@ -710,4 +662,62 @@ Wire Wire Line
 	1650 4000 1650 4150
 Text Notes 4200 1700 0    59   ~ 12
 MOSFET
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 616AD776
+P 4700 1050
+F 0 "TH?" V 4410 1050 50  0000 C CNN
+F 1 "Thermistor_PTC" V 4501 1050 50  0000 C CNN
+F 2 "" H 4750 850 50  0001 L CNN
+F 3 "~" H 4700 1050 50  0001 C CNN
+	1    4700 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 1950 3950 2000
+Wire Wire Line
+	3950 2000 4350 2000
+Wire Wire Line
+	4350 2000 4350 1050
+Wire Wire Line
+	4350 1050 4550 1050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6164E01B
+P 5150 1050
+F 0 "TP1" V 5104 1238 50  0000 L CNN
+F 1 "TestPoint" V 5195 1238 50  0000 L CNN
+F 2 "" H 5350 1050 50  0001 C CNN
+F 3 "~" H 5350 1050 50  0001 C CNN
+	1    5150 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 616506C1
+P 5150 1450
+F 0 "TP2" V 5104 1638 50  0000 L CNN
+F 1 "TestPoint" V 5195 1638 50  0000 L CNN
+F 2 "" H 5350 1450 50  0001 C CNN
+F 3 "~" H 5350 1450 50  0001 C CNN
+	1    5150 1450
+	0    1    1    0   
+$EndComp
+Text Notes 5000 1300 0    50   ~ 0
+nichrome wire R=4
+Wire Wire Line
+	5650 2250 4950 2250
+Wire Wire Line
+	4950 2250 4950 1050
+Wire Wire Line
+	4950 1050 4850 1050
+Wire Wire Line
+	5150 1050 4950 1050
+Connection ~ 4950 1050
+Wire Wire Line
+	5150 1450 4700 1450
+Wire Wire Line
+	4700 1450 4700 2350
+Wire Wire Line
+	4700 2350 3300 2350
 $EndSCHEMATC
