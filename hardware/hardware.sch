@@ -48,8 +48,6 @@ F 3 "" H 1300 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 900  1100 900 
-Text GLabel 1200 2100 3    50   Input ~ 0
-pv
 Wire Wire Line
 	1200 2100 1200 1900
 $Comp
@@ -120,8 +118,6 @@ Wire Wire Line
 	2650 2000 3300 2000
 Wire Wire Line
 	3950 950  3300 950 
-Text GLabel 3300 850  1    50   Input ~ 0
-pv
 $Comp
 L Device:R R1
 U 1 1 61541666
@@ -139,28 +135,20 @@ Wire Wire Line
 	1600 950  1650 950 
 Wire Wire Line
 	1950 950  2050 950 
+Connection ~ 3950 1100
 Wire Wire Line
-	3200 1100 3800 1100
+	3200 1250 3450 1250
 Wire Wire Line
-	3800 1100 3800 1450
-Wire Wire Line
-	3800 1450 3950 1450
-Connection ~ 3950 1450
-Wire Wire Line
-	3200 1250 3650 1250
-Wire Wire Line
-	3950 1450 3950 1550
-Wire Wire Line
-	3650 1250 3650 1750
+	3950 1100 3950 1150
 $Comp
 L Transistor_FET:BUK7M33-60EX Q1
 U 1 1 6158AC0E
-P 3850 1750
-F 0 "Q1" H 4054 1796 50  0000 L CNN
-F 1 "BUK7M33-60EX" H 4054 1705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:LFPAK33" H 4050 1675 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf" V 3850 1750 50  0001 L CNN
-	1    3850 1750
+P 3850 1350
+F 0 "Q1" H 4054 1396 50  0000 L CNN
+F 1 "BUK7M33-60EX" H 4054 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:LFPAK33" H 4050 1275 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf" V 3850 1350 50  0001 L CNN
+	1    3850 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -335,8 +323,6 @@ F 3 "" H 7200 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 3050 7200 3200
-Text GLabel 5300 3200 0    50   Input ~ 0
-pv
 Wire Wire Line
 	5300 3200 5550 3200
 Connection ~ 5550 3200
@@ -436,8 +422,6 @@ Wire Wire Line
 Wire Wire Line
 	7200 4850 7100 4850
 Connection ~ 7100 4850
-Text GLabel 5400 4850 0    50   Input ~ 0
-pv
 Wire Wire Line
 	5400 4850 5550 4850
 Connection ~ 5550 4850
@@ -523,8 +507,6 @@ Wire Wire Line
 NoConn ~ 1650 4950
 NoConn ~ 1050 4150
 NoConn ~ 1150 4150
-Wire Wire Line
-	3300 2350 3300 2000
 Connection ~ 3300 2000
 NoConn ~ 3950 5700
 $Comp
@@ -628,16 +610,85 @@ Wire Wire Line
 	1350 5700 2100 5700
 Wire Wire Line
 	1650 4000 1650 4150
-Text Notes 3750 2100 0    59   ~ 12
+Text Notes 3950 1650 0    59   ~ 12
 MOSFET
 Wire Wire Line
-	3950 1950 3950 2000
+	3950 1550 3950 1650
 Wire Wire Line
-	3950 2000 4350 2000
+	3950 1650 4350 1650
 Wire Wire Line
-	4350 2000 4350 1050
+	4350 1650 4350 1050
 Wire Wire Line
-	4350 1050 4550 1050
+	5150 1450 4700 1450
+Wire Wire Line
+	4700 1450 4700 2000
+Wire Wire Line
+	4700 2000 3300 2000
+Wire Wire Line
+	3950 950  3950 1100
+Text Notes 800  3350 1    39   ~ 0
+Based on what alumni said about other thermistor, \nwe may need to change this to a capacitor bank
+Wire Wire Line
+	4350 2600 1650 2600
+Wire Wire Line
+	3950 5800 4900 5800
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 617FDF47
+P 2250 3400
+F 0 "#PWR0101" H 2250 3250 50  0001 C CNN
+F 1 "+3.3V" H 2265 3573 50  0000 C CNN
+F 2 "" H 2250 3400 50  0001 C CNN
+F 3 "" H 2250 3400 50  0001 C CNN
+	1    2250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR05
+U 1 1 6185F659
+P 1200 2100
+F 0 "#PWR05" H 1200 1950 50  0001 C CNN
+F 1 "+12V" H 1215 2273 50  0000 C CNN
+F 2 "" H 1200 2100 50  0001 C CNN
+F 3 "" H 1200 2100 50  0001 C CNN
+	1    1200 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR09
+U 1 1 6186E5B3
+P 3300 850
+F 0 "#PWR09" H 3300 700 50  0001 C CNN
+F 1 "+12V" H 3315 1023 50  0000 C CNN
+F 2 "" H 3300 850 50  0001 C CNN
+F 3 "" H 3300 850 50  0001 C CNN
+	1    3300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR012
+U 1 1 6186F163
+P 5300 3200
+F 0 "#PWR012" H 5300 3050 50  0001 C CNN
+F 1 "+12V" H 5315 3373 50  0000 C CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR013
+U 1 1 6186FB8E
+P 5400 4850
+F 0 "#PWR013" H 5400 4700 50  0001 C CNN
+F 1 "+12V" H 5415 5023 50  0000 C CNN
+F 2 "" H 5400 4850 50  0001 C CNN
+F 3 "" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1050 5150 1050
 $Comp
 L Connector:TestPoint TP1
 U 1 1 6164E01B
@@ -660,40 +711,174 @@ F 3 "~" H 5350 1450 50  0001 C CNN
 	1    5150 1450
 	0    1    1    0   
 $EndComp
-Text Notes 5000 1300 0    50   ~ 0
-nichrome wire R=4
-Wire Wire Line
-	4950 1050 4850 1050
-Wire Wire Line
-	5150 1050 4950 1050
-Connection ~ 4950 1050
-Wire Wire Line
-	5150 1450 4700 1450
-Wire Wire Line
-	4700 1450 4700 2350
-Wire Wire Line
-	4700 2350 3300 2350
-Wire Wire Line
-	3950 950  3950 1450
-Text Notes 4300 950  0    50   ~ 0
-Temperature Sensor go here?
-Text Notes 800  3350 1    39   ~ 0
-Based on what alumni said about other thermistor, \nwe may need to change this to a capacitor bank
-Wire Wire Line
-	4350 2600 1650 2600
-Wire Wire Line
-	4950 1050 4950 5800
-Wire Wire Line
-	3950 5800 4950 5800
 $Comp
-L power:+3.3V #PWR0101
-U 1 1 617FDF47
-P 2250 3400
-F 0 "#PWR0101" H 2250 3250 50  0001 C CNN
-F 1 "+3.3V" H 2265 3573 50  0000 C CNN
-F 2 "" H 2250 3400 50  0001 C CNN
-F 3 "" H 2250 3400 50  0001 C CNN
-	1    2250 3400
+L pspice:OPAMP U5
+U 1 1 61883082
+P 6950 1750
+F 0 "U5" H 7294 1796 50  0000 L CNN
+F 1 "OPAMP" H 7294 1705 50  0000 L CNN
+F 2 "" H 6950 1750 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+	1    6950 1750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5900 1250 5900 1650
+Wire Wire Line
+	5900 1650 5950 1650
+Connection ~ 5900 1250
+Wire Wire Line
+	5900 1250 5800 1250
+$Comp
+L Device:R R2
+U 1 1 6188BE7E
+P 6100 1650
+F 0 "R2" V 5893 1650 50  0000 C CNN
+F 1 "R" V 5984 1650 50  0000 C CNN
+F 2 "" V 6030 1650 50  0001 C CNN
+F 3 "~" H 6100 1650 50  0001 C CNN
+	1    6100 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6188C537
+P 6350 2000
+F 0 "R3" H 6420 2046 50  0000 L CNN
+F 1 "R" H 6420 1955 50  0000 L CNN
+F 2 "" V 6280 2000 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1650 6350 1650
+Wire Wire Line
+	6350 1650 6350 1850
+Connection ~ 6350 1650
+Wire Wire Line
+	6350 1650 6650 1650
+$Comp
+L Device:R R4
+U 1 1 618986EC
+P 6550 1400
+F 0 "R4" H 6620 1446 50  0000 L CNN
+F 1 "R" H 6620 1355 50  0000 L CNN
+F 2 "" V 6480 1400 50  0001 C CNN
+F 3 "~" H 6550 1400 50  0001 C CNN
+	1    6550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1550 6550 1850
+Wire Wire Line
+	6550 1850 6650 1850
+Wire Wire Line
+	6550 1850 6550 2200
+Wire Wire Line
+	6550 2200 6950 2200
+Connection ~ 6550 1850
+Wire Wire Line
+	4900 2350 4900 5800
+$Comp
+L Device:R R5
+U 1 1 618B3C30
+P 7100 2200
+F 0 "R5" V 6893 2200 50  0000 C CNN
+F 1 "R" V 6984 2200 50  0000 C CNN
+F 2 "" V 7030 2200 50  0001 C CNN
+F 3 "~" H 7100 2200 50  0001 C CNN
+	1    7100 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 618B41E2
+P 6850 2450
+F 0 "#PWR017" H 6850 2200 50  0001 C CNN
+F 1 "GND" H 6855 2277 50  0000 C CNN
+F 2 "" H 6850 2450 50  0001 C CNN
+F 3 "" H 6850 2450 50  0001 C CNN
+	1    6850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 618B513D
+P 6350 2450
+F 0 "#PWR015" H 6350 2200 50  0001 C CNN
+F 1 "GND" H 6355 2277 50  0000 C CNN
+F 2 "" H 6350 2450 50  0001 C CNN
+F 3 "" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2150 6350 2450
+Wire Wire Line
+	6850 2050 6850 2450
+Wire Wire Line
+	6850 1450 6850 1300
+$Comp
+L power:+3.3V #PWR016
+U 1 1 618C8D34
+P 6850 1300
+F 0 "#PWR016" H 6850 1150 50  0001 C CNN
+F 1 "+3.3V" H 6865 1473 50  0000 C CNN
+F 2 "" H 6850 1300 50  0001 C CNN
+F 3 "" H 6850 1300 50  0001 C CNN
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1250 5800 1150
+$Comp
+L power:+3.3V #PWR014
+U 1 1 618CE1E9
+P 5800 1150
+F 0 "#PWR014" H 5800 1000 50  0001 C CNN
+F 1 "+3.3V" H 5815 1323 50  0000 C CNN
+F 2 "" H 5800 1150 50  0001 C CNN
+F 3 "" H 5800 1150 50  0001 C CNN
+	1    5800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2350 4900 2350
+Wire Wire Line
+	3200 1100 3950 1100
+Wire Wire Line
+	3650 1350 3450 1350
+Wire Wire Line
+	3450 1350 3450 1250
+Wire Wire Line
+	7400 1750 7250 1750
+Connection ~ 7400 2200
+Wire Wire Line
+	7400 2200 7400 2350
+Wire Wire Line
+	7250 2200 7400 2200
+Wire Wire Line
+	7400 2200 7400 1750
+Text Notes 7000 1500 0    39   ~ 0
+R2 = R4\nR3 = R5\nVout = (R3/R2)(V1-V2)
+$Comp
+L MRDT_Connectors:Molex_uF_S_02 Conn?
+U 1 1 6191C897
+P 6250 1050
+F 0 "Conn?" V 6245 1022 60  0000 R CNN
+F 1 "Molex_uF_S_02" V 6400 1200 60  0000 R CNN
+F 2 "MRDT_Connectors:MOLEX_uF_S_02_Horizontal" H 6250 950 60  0001 C CNN
+F 3 "" H 6250 950 60  0001 C CNN
+	1    6250 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 1250 6100 1250
+Wire Wire Line
+	6200 1250 6550 1250
+Text Notes 6100 850  0    39   ~ 0
+Thermistor
+Text Notes 4950 1300 0    39   ~ 0
+Test points will change\nto something else
 $EndSCHEMATC
