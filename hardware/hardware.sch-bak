@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L hardware-rescue:AndersonPP-MRDT_Connectors Conn1
 U 4 1 614D2045
-P 700 1600
-F 0 "Conn1" H 908 1987 60  0000 C CNN
-F 1 "AndersonPP" H 908 1881 60  0000 C CNN
-F 2 "MRDT_Connectors:Anderson_1_Horizontal" H 550 1050 60  0001 C CNN
-F 3 "" H 550 1050 60  0001 C CNN
-	4    700  1600
+P 600 1550
+F 0 "Conn1" H 808 1937 60  0000 C CNN
+F 1 "AndersonPP" H 808 1831 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_1_Horizontal" H 450 1000 60  0001 C CNN
+F 3 "" H 450 1000 60  0001 C CNN
+	4    600  1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L hardware-rescue:AndersonPP-MRDT_Connectors Conn1
 U 1 1 614D689F
-P 700 1000
-F 0 "Conn1" H 908 1387 60  0000 C CNN
-F 1 "AndersonPP" H 908 1281 60  0000 C CNN
-F 2 "MRDT_Connectors:Anderson_1_Horizontal" H 550 450 60  0001 C CNN
-F 3 "" H 550 450 60  0001 C CNN
-	1    700  1000
+P 600 1000
+F 0 "Conn1" H 808 1387 60  0000 C CNN
+F 1 "AndersonPP" H 808 1281 60  0000 C CNN
+F 2 "MRDT_Connectors:Anderson_1_Horizontal" H 450 450 60  0001 C CNN
+F 3 "" H 450 450 60  0001 C CNN
+	1    600  1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -47,9 +47,7 @@ F 3 "" H 1300 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 900  1100 900 
-Wire Wire Line
-	1200 2100 1200 1900
+	1300 900  1000 900 
 $Comp
 L hardware-rescue:LT1910-MRDT_ICs U2
 U 1 1 61539417
@@ -324,7 +322,7 @@ $EndComp
 Wire Wire Line
 	7200 3050 7200 3200
 Wire Wire Line
-	5300 3200 5550 3200
+	5400 3200 5550 3200
 Connection ~ 5550 3200
 Text Notes 5750 2900 0    59   ~ 12
 5V Buck Convertor
@@ -464,21 +462,6 @@ Wire Wire Line
 	4350 4400 4350 2600
 Wire Wire Line
 	3950 4400 4350 4400
-$Comp
-L Device:Thermistor_NTC TH3
-U 1 1 61610BEA
-P 1200 1750
-F 0 "TH3" H 1047 1704 50  0000 R CNN
-F 1 "Rmin = 840" H 1047 1795 50  0000 R CNN
-F 2 "" H 1200 1800 50  0001 C CNN
-F 3 "~" H 1200 1800 50  0001 C CNN
-	1    1200 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1500 1200 1500
-Wire Wire Line
-	1200 1500 1200 1600
 $Comp
 L Connector:RJ45_LED_Shielded J2
 U 1 1 61651929
@@ -626,8 +609,6 @@ Wire Wire Line
 	4700 2000 3300 2000
 Wire Wire Line
 	3950 950  3950 1100
-Text Notes 800  3350 1    39   ~ 0
-Based on what alumni said about other thermistor, \nwe may need to change this to a capacitor bank
 Wire Wire Line
 	4350 2600 1650 2600
 Wire Wire Line
@@ -644,17 +625,6 @@ F 3 "" H 2250 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR05
-U 1 1 6185F659
-P 1200 2100
-F 0 "#PWR05" H 1200 1950 50  0001 C CNN
-F 1 "+12V" H 1215 2273 50  0000 C CNN
-F 2 "" H 1200 2100 50  0001 C CNN
-F 3 "" H 1200 2100 50  0001 C CNN
-	1    1200 2100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+12V #PWR09
 U 1 1 6186E5B3
 P 3300 850
@@ -668,12 +638,12 @@ $EndComp
 $Comp
 L power:+12V #PWR012
 U 1 1 6186F163
-P 5300 3200
-F 0 "#PWR012" H 5300 3050 50  0001 C CNN
-F 1 "+12V" H 5315 3373 50  0000 C CNN
-F 2 "" H 5300 3200 50  0001 C CNN
-F 3 "" H 5300 3200 50  0001 C CNN
-	1    5300 3200
+P 5400 3200
+F 0 "#PWR012" H 5400 3050 50  0001 C CNN
+F 1 "+12V" H 5415 3373 50  0000 C CNN
+F 2 "" H 5400 3200 50  0001 C CNN
+F 3 "" H 5400 3200 50  0001 C CNN
+	1    5400 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -863,10 +833,10 @@ Wire Wire Line
 Text Notes 7000 1500 0    39   ~ 0
 R2 = R4\nR3 = R5\nVout = (R3/R2)(V1-V2)
 $Comp
-L MRDT_Connectors:Molex_uF_S_02 Conn?
+L MRDT_Connectors:Molex_uF_S_02 Conn2
 U 1 1 6191C897
 P 6250 1050
-F 0 "Conn?" V 6245 1022 60  0000 R CNN
+F 0 "Conn2" V 6245 1022 60  0000 R CNN
 F 1 "Molex_uF_S_02" V 6400 1200 60  0000 R CNN
 F 2 "MRDT_Connectors:MOLEX_uF_S_02_Horizontal" H 6250 950 60  0001 C CNN
 F 3 "" H 6250 950 60  0001 C CNN
@@ -881,4 +851,121 @@ Text Notes 6100 850  0    39   ~ 0
 Thermistor
 Text Notes 4950 1300 0    39   ~ 0
 Test points will change\nto something else
+$Comp
+L Device:C C10
+U 1 1 6188A650
+P 1450 1950
+F 0 "C10" H 1335 1904 50  0000 R CNN
+F 1 "10uF" H 1335 1995 50  0000 R CNN
+F 2 "" H 1488 1800 50  0001 C CNN
+F 3 "~" H 1450 1950 50  0001 C CNN
+	1    1450 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 1450 1050 1450
+$Comp
+L Device:C C13
+U 1 1 618A9751
+P 1050 1950
+F 0 "C13" H 935 1904 50  0000 R CNN
+F 1 "10uF" H 935 1995 50  0000 R CNN
+F 2 "" H 1088 1800 50  0001 C CNN
+F 3 "~" H 1050 1950 50  0001 C CNN
+	1    1050 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 618A9A16
+P 650 1950
+F 0 "C11" H 535 1904 50  0000 R CNN
+F 1 "10uF" H 535 1995 50  0000 R CNN
+F 2 "" H 688 1800 50  0001 C CNN
+F 3 "~" H 650 1950 50  0001 C CNN
+	1    650  1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 618AA2E7
+P 1450 2350
+F 0 "C15" H 1335 2304 50  0000 R CNN
+F 1 "10uF" H 1335 2395 50  0000 R CNN
+F 2 "" H 1488 2200 50  0001 C CNN
+F 3 "~" H 1450 2350 50  0001 C CNN
+	1    1450 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 618AA6DA
+P 1050 2350
+F 0 "C14" H 935 2304 50  0000 R CNN
+F 1 "10uF" H 935 2395 50  0000 R CNN
+F 2 "" H 1088 2200 50  0001 C CNN
+F 3 "~" H 1050 2350 50  0001 C CNN
+	1    1050 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 618AAA14
+P 650 2350
+F 0 "C12" H 535 2304 50  0000 R CNN
+F 1 "10uF" H 535 2395 50  0000 R CNN
+F 2 "" H 688 2200 50  0001 C CNN
+F 3 "~" H 650 2350 50  0001 C CNN
+	1    650  2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 2100 1450 2200
+Wire Wire Line
+	1450 2500 1450 2600
+Wire Wire Line
+	650  2600 650  2500
+Wire Wire Line
+	1050 2600 1050 2700
+Wire Wire Line
+	1050 2600 1050 2500
+Connection ~ 1050 2600
+Wire Wire Line
+	1050 2200 1050 2100
+Wire Wire Line
+	650  2200 650  2100
+Wire Wire Line
+	650  1800 650  1650
+Wire Wire Line
+	1450 1650 1450 1800
+Wire Wire Line
+	1050 1650 1050 1800
+Connection ~ 1050 1650
+Wire Wire Line
+	1050 1450 1050 1650
+Wire Wire Line
+	650  1650 1050 1650
+Wire Wire Line
+	650  2600 1050 2600
+Wire Wire Line
+	1050 1650 1450 1650
+Wire Wire Line
+	1050 2600 1450 2600
+Text Notes 500  3050 0    50   ~ 0
+Capacitor bank equivalent to 150uF
+Text Notes 500  3150 0    50   ~ 0
+Series = Product/Sum
+Text Notes 500  3250 0    50   ~ 0
+Parallel = Sum
+$Comp
+L power:+12VA #PWR?
+U 1 1 6191BFFF
+P 1050 2700
+F 0 "#PWR?" H 1050 2550 50  0001 C CNN
+F 1 "+12VA" H 1065 2873 50  0000 C CNN
+F 2 "" H 1050 2700 50  0001 C CNN
+F 3 "" H 1050 2700 50  0001 C CNN
+	1    1050 2700
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
