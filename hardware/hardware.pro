@@ -1,4 +1,4 @@
-update=11/15/2021 8:52:05 PM
+update=11/16/2021 7:36:19 PM
 version=1
 last_client=kicad
 [general]
@@ -12,10 +12,20 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=hardware.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -37,6 +47,8 @@ TrackWidth6=1.27
 TrackWidth7=1.905
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=1.524
+ViaDrill2=1.27
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
