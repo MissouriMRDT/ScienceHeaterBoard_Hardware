@@ -2195,7 +2195,7 @@
   (gr_text TempSense3 (at 171.704 100.33) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text TempSense2 (at 160.782 80.391) (layer F.SilkS)
+  (gr_text TempSense2 (at 162.179 80.391) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text TempSense1 (at 135.89 61.849) (layer F.SilkS)
