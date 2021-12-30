@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Brink\Documents\GitHub\ScienceHeater-Hardware\hardware\hardware.sch</source>
+    <date>11/15/2021 11:15:30 PM</date>
+    <tool>Eeschema (5.1.10)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Heater Board</title>
+        <company>MRDT</company>
+        <rev/>
+        <date/>
+        <source>hardware.sch</source>
+        <comment number="1" value="Live Laugh Ligma"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Mosfets and Sensors/" tstamps="/618CFEA8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>heatermosfets.sch</source>
+        <comment number="1" value="hippity hoppity suck my cockity"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Conn2">
+      <value>AndersonPP</value>
+      <footprint>MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side</footprint>
+      <libsource lib="hardware-rescue" part="AndersonPP-MRDT_Connectors" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614D689F</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>OKI</value>
+      <footprint>MRDT_Devices:OKI_Horizontal</footprint>
+      <libsource lib="hardware-rescue" part="OKI-MRDT_Devices" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615CF578</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>22uF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615D0172</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615D0C5E</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615D10E8</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>22uF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615E4740</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615E5260</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615E581E</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>OKI-78SR-3.3_1.5-W36H-C</value>
+      <footprint>Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Horizontal</footprint>
+      <datasheet>https://power.murata.com/data/power/oki-78sr.pdf</datasheet>
+      <libsource lib="Converter_DCDC" part="OKI-78SR-3.3_1.5-W36H-C" description="1.5A Step-Down DC/DC-Regulator, 7-36V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Horizontal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615F8C84</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>Teensy4.1_DEV-16771</value>
+      <footprint>MRDT_Shields:Teensy_4_1_Vertical</footprint>
+      <fields>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.07mm</field>
+        <field name="PARTREV">4.1</field>
+        <field name="STANDARD">Manufacturer recommendations</field>
+      </fields>
+      <libsource lib="hardware-rescue" part="Teensy4.1_DEV-16771-MRDT_Shields" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6158A854</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>RJ45_LED_Shielded</value>
+      <footprint>MRDT_Connectors:RJ45_Teensy</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="RJ45_LED_Shielded" description="RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61651929</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6167296B</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>6P6C</value>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="6P6C" description="RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61663DF2</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LT1910</value>
+      <footprint>Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="hardware-rescue" part="LT1910-MRDT_ICs" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>618FC10F</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>618FC11D</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10uF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>618FC125</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>618FC134</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BUK7M33-60EX</value>
+      <footprint>Package_TO_SOT_SMD:LFPAK33</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="BUK7M33-60EX" description="24A Id, 60V Vds, N-Channel TrenchMOS MOSFET, 33mOhm Ron, 10.9nC Qqd, -55 to 175 °C, LFPAK33"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>618FC140</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LT1910</value>
+      <footprint>Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="hardware-rescue" part="LT1910-MRDT_ICs" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619075B4</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619075C2</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10uF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619075CA</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619075D9</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BUK7M33-60EX</value>
+      <footprint>Package_TO_SOT_SMD:LFPAK33</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="BUK7M33-60EX" description="24A Id, 60V Vds, N-Channel TrenchMOS MOSFET, 33mOhm Ron, 10.9nC Qqd, -55 to 175 °C, LFPAK33"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619075E5</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>LT1910</value>
+      <footprint>Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="hardware-rescue" part="LT1910-MRDT_ICs" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61917BE4</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61917BF2</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10uF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61917BFA</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61917C09</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BUK7M33-60EX</value>
+      <footprint>Package_TO_SOT_SMD:LFPAK33</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="BUK7M33-60EX" description="24A Id, 60V Vds, N-Channel TrenchMOS MOSFET, 33mOhm Ron, 10.9nC Qqd, -55 to 175 °C, LFPAK33"/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61917C15</tstamp>
+    </comp>
+    <comp ref="Conn4">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>619E705E</tstamp>
+    </comp>
+    <comp ref="Conn5">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61A01312</tstamp>
+    </comp>
+    <comp ref="Conn7">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61A199C8</tstamp>
+    </comp>
+    <comp ref="Conn8">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61A199D1</tstamp>
+    </comp>
+    <comp ref="Conn10">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61A21771</tstamp>
+    </comp>
+    <comp ref="Conn11">
+      <value>Molex_uF_S_02</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_02_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_02" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61A2177A</tstamp>
+    </comp>
+    <comp ref="Conn3">
+      <value>Molex_uF_S_03</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_03_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_03" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61B1BD32</tstamp>
+    </comp>
+    <comp ref="Conn6">
+      <value>Molex_uF_S_03</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_03_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_03" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61B41157</tstamp>
+    </comp>
+    <comp ref="Conn9">
+      <value>Molex_uF_S_03</value>
+      <footprint>MRDT_Connectors:MOLEX_uF_S_03_Horizontal</footprint>
+      <libsource lib="MRDT_Connectors" part="Molex_uF_S_03" description=""/>
+      <sheetpath names="/Mosfets and Sensors/" tstamps="/618CFEA8/"/>
+      <tstamp>61B44B57</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="6P6C">
+      <aliases>
+        <alias>RJ12</alias>
+        <alias>RJ18</alias>
+        <alias>RJ25</alias>
+      </aliases>
+      <description>RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>6P6C*</fp>
+        <fp>RJ12*</fp>
+        <fp>RJ18*</fp>
+        <fp>RJ25*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">6P6C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="8P8C_LED_Shielded">
+      <aliases>
+        <alias>RJ45_LED_Shielded</alias>
+      </aliases>
+      <description>RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45, Shielded</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>8P8C*</fp>
+        <fp>RJ45*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">8P8C_LED_Shielded</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="SH" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Converter_DCDC" part="OKI-78SR-3.3_1.5-W36H-C">
+      <aliases>
+        <alias>OKI-78SR-12_1.0-W36H-C</alias>
+        <alias>OKI-78SR-5_1.5-W36H-C</alias>
+      </aliases>
+      <description>1.5A Step-Down DC/DC-Regulator, 7-36V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Horizontal</description>
+      <docs>https://power.murata.com/data/power/oki-78sr.pdf</docs>
+      <footprints>
+        <fp>Converter*DCDC*muRata*OKI*78SR*Horizontal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OKI-78SR-3.3_1.5-W36H-C</field>
+        <field name="Footprint">Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MRDT_Connectors" part="Molex_uF_S_02">
+      <fields>
+        <field name="Reference">Conn</field>
+        <field name="Value">Molex_uF_S_02</field>
+        <field name="Footprint">MRDT_Connectors:MOLEX_uF_S_02_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MRDT_Connectors" part="Molex_uF_S_03">
+      <fields>
+        <field name="Reference">Conn</field>
+        <field name="Value">Molex_uF_S_03</field>
+        <field name="Footprint">MRDT_Connectors:MOLEX_uF_S_03_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BUK9M53-60EX">
+      <aliases>
+        <alias>BUK9M85-60EX</alias>
+        <alias>BUK7M45-40EX</alias>
+        <alias>BUK9M52-40EX</alias>
+        <alias>BUK9M42-60EX</alias>
+        <alias>BUK9M14-40EX</alias>
+        <alias>BUK9M24-60EX</alias>
+        <alias>BUK9M10-30EX</alias>
+        <alias>BUK9M11-40EX</alias>
+        <alias>BUK7M10-40EX</alias>
+        <alias>BUK7M15-60EX</alias>
+        <alias>BUK7M19-60EX</alias>
+        <alias>BUK9M9R1-40EX</alias>
+        <alias>BUK9M6R6-30EX</alias>
+        <alias>BUK9M12-60EX</alias>
+        <alias>BUK7M9R9-60EX</alias>
+        <alias>BUK7M42-60EX</alias>
+        <alias>BUK9M156-100EX</alias>
+        <alias>BUK7M33-60EX</alias>
+        <alias>BUK7M21-40EX</alias>
+        <alias>BUK9M43-100EX</alias>
+        <alias>BUK7M12-60EX</alias>
+        <alias>BUK9M15-60EX</alias>
+        <alias>BUK7M27-80EX</alias>
+        <alias>BUK9M19-60EX</alias>
+        <alias>BUK9M5R2-30EX</alias>
+        <alias>BUK7M17-80EX</alias>
+        <alias>BUK9M7R2-40EX</alias>
+        <alias>BUK9M34-100EX</alias>
+        <alias>BUK9M23-80EX</alias>
+        <alias>BUK7M67-60EX</alias>
+        <alias>BUK9M24-40EX</alias>
+        <alias>BUK9M120-100EX</alias>
+        <alias>BUK9M17-30EX</alias>
+        <alias>BUK7M12-40EX</alias>
+        <alias>BUK9M28-80EX</alias>
+        <alias>BUK7M8R0-40EX</alias>
+        <alias>BUK9M35-80EX</alias>
+        <alias>BUK7M6R3-40EX</alias>
+        <alias>BUK7M22-80EX</alias>
+      </aliases>
+      <description>17A Id, 60V Vds, N-Channel TrenchMOS MOSFET, 46mOhm Ron, 6nC Qqd, -55 to 175 °C, LFPAK33</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BUK9M53-60E.pdf</docs>
+      <footprints>
+        <fp>LFPAK33*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BUK9M53-60EX</field>
+        <field name="Footprint">Package_TO_SOT_SMD:LFPAK33</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="passive"/>
+        <pin num="5" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hardware-rescue" part="AndersonPP-MRDT_Connectors">
+      <fields>
+        <field name="Reference">Conn</field>
+        <field name="Value">AndersonPP-MRDT_Connectors</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="V+Log" type="input"/>
+        <pin num="3" name="V+Act" type="input"/>
+        <pin num="4" name="PV+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="hardware-rescue" part="LT1910-MRDT_ICs">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT1910-MRDT_ICs</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="TIMER" type="passive"/>
+        <pin num="3" name="FAULT" type="passive"/>
+        <pin num="4" name="IN" type="passive"/>
+        <pin num="5" name="GATE" type="passive"/>
+        <pin num="6" name="SENSE" type="passive"/>
+        <pin num="8" name="V+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hardware-rescue" part="OKI-MRDT_Devices">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OKI-MRDT_Devices</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vi" type="input"/>
+        <pin num="2" name="GND" type="output"/>
+        <pin num="3" name="Vo" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="hardware-rescue" part="Teensy4.1_DEV-16771-MRDT_Shields">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy4.1_DEV-16771-MRDT_Shields</field>
+        <field name="Footprint">MODULE_DEV-16771</field>
+        <field name="STANDARD">Manufacturer recommendations</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.07mm</field>
+        <field name="MANUFACTURER">SparkFun Electronics</field>
+        <field name="PARTREV">4.1</field>
+      </fields>
+      <pins>
+        <pin num="0" name="RX1" type="BiDi"/>
+        <pin num="1" name="TX1" type="BiDi"/>
+        <pin num="2" name="OUT2" type="output"/>
+        <pin num="3" name="LRCLK2" type="BiDi"/>
+        <pin num="4" name="BCLK2" type="BiDi"/>
+        <pin num="5" name="IN2" type="BiDi"/>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="6" name="OUT1D" type="output"/>
+        <pin num="7" name="RX2" type="BiDi"/>
+        <pin num="8" name="TX2" type="BiDi"/>
+        <pin num="9" name="OUT1C" type="output"/>
+        <pin num="10" name="CS1" type="BiDi"/>
+        <pin num="11" name="MOSI" type="BiDi"/>
+        <pin num="12" name="MISO" type="BiDi"/>
+        <pin num="13" name="SCK" type="BiDi"/>
+        <pin num="14" name="A0" type="BiDi"/>
+        <pin num="15" name="A1" type="BiDi"/>
+        <pin num="16" name="A2" type="BiDi"/>
+        <pin num="17" name="A3" type="BiDi"/>
+        <pin num="18" name="A4" type="BiDi"/>
+        <pin num="19" name="A5" type="BiDi"/>
+        <pin num="20" name="A6" type="BiDi"/>
+        <pin num="21" name="A7" type="BiDi"/>
+        <pin num="22" name="A8" type="BiDi"/>
+        <pin num="23" name="A9" type="BiDi"/>
+        <pin num="24" name="A10" type="BiDi"/>
+        <pin num="25" name="A11" type="BiDi"/>
+        <pin num="26" name="A12" type="BiDi"/>
+        <pin num="27" name="A13" type="BiDi"/>
+        <pin num="28" name="RX7" type="BiDi"/>
+        <pin num="29" name="TX7" type="BiDi"/>
+        <pin num="30" name="CRX3" type="BiDi"/>
+        <pin num="31" name="CTX3" type="BiDi"/>
+        <pin num="32" name="OUT1B" type="output"/>
+        <pin num="33" name="MCLK2" type="BiDi"/>
+        <pin num="34" name="RX8" type="BiDi"/>
+        <pin num="35" name="TX8" type="BiDi"/>
+        <pin num="36" name="CS2" type="BiDi"/>
+        <pin num="37" name="CS3" type="BiDi"/>
+        <pin num="38" name="A14" type="BiDi"/>
+        <pin num="39" name="A15" type="BiDi"/>
+        <pin num="40" name="A16" type="BiDi"/>
+        <pin num="41" name="A17" type="BiDi"/>
+        <pin num="3.3V_1" name="3.3V" type="power_in"/>
+        <pin num="3.3V_2" name="3.3V" type="power_in"/>
+        <pin num="3.3V_3" name="3.3V" type="power_in"/>
+        <pin num="D" name="D-" type="BiDi"/>
+        <pin num="D+" name="D+" type="BiDi"/>
+        <pin num="GND1" name="GND" type="power_in"/>
+        <pin num="GND2" name="GND" type="power_in"/>
+        <pin num="GND3" name="GND" type="power_in"/>
+        <pin num="GND4" name="GND" type="power_in"/>
+        <pin num="GND5" name="GND" type="power_in"/>
+        <pin num="LED" name="LED" type="BiDi"/>
+        <pin num="ON/OFF" name="ON/OFF" type="BiDi"/>
+        <pin num="PROGRAM" name="PROGRAM" type="BiDi"/>
+        <pin num="R" name="R-" type="BiDi"/>
+        <pin num="R+" name="R+" type="BiDi"/>
+        <pin num="T" name="T-" type="BiDi"/>
+        <pin num="T+" name="T+" type="BiDi"/>
+        <pin num="USB_GND1" name="USB_GND" type="power_in"/>
+        <pin num="USB_GND2" name="USB_GND" type="power_in"/>
+        <pin num="VBAT" name="VBAT" type="passive"/>
+        <pin num="VIN" name="VIN" type="input"/>
+        <pin num="VUSB" name="VUSB" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Converter_DCDC">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Converter_DCDC.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="MRDT_Connectors">
+      <uri>C:\Users\Brink\Documents\GitHub\MRDT_KiCAD_Libraries/Symbols/MRDT_Connectors.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
+    </library>
+    <library logical="hardware-rescue">
+      <uri>C:\Users\Brink\Documents\GitHub\ScienceHeater-Hardware\hardware/hardware-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J2-Pad11)">
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="2" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad5)">
+      <node ref="J2" pin="6"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="5" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="6" name="Net-(J2-Pad12)">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad4)">
+      <node ref="J2" pin="10"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(U2-PadVUSB)">
+      <node ref="U2" pin="VUSB"/>
+    </net>
+    <net code="9" name="+3V3">
+      <node ref="Conn6" pin="1"/>
+      <node ref="Conn9" pin="1"/>
+      <node ref="Conn3" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U2" pin="VIN"/>
+    </net>
+    <net code="10" name="Net-(U2-PadVBAT)">
+      <node ref="U2" pin="VBAT"/>
+    </net>
+    <net code="11" name="Net-(U2-PadT+)">
+      <node ref="U2" pin="T+"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="C7" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="Conn4" pin="2"/>
+      <node ref="Conn5" pin="2"/>
+      <node ref="Conn7" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="J2" pin="SH"/>
+      <node ref="Conn2" pin="1"/>
+      <node ref="U2" pin="USB_GND2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U2" pin="USB_GND1"/>
+      <node ref="Conn10" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U2" pin="GND2"/>
+      <node ref="Conn9" pin="3"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U2" pin="GND1"/>
+      <node ref="U2" pin="GND3"/>
+      <node ref="U2" pin="GND4"/>
+      <node ref="Conn8" pin="2"/>
+      <node ref="U2" pin="GND5"/>
+      <node ref="Conn3" pin="3"/>
+      <node ref="Conn11" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="Conn6" pin="3"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="13" name="Net-(U2-PadT)">
+      <node ref="U2" pin="T"/>
+    </net>
+    <net code="14" name="Net-(C1-Pad2)">
+      <node ref="J2" pin="9"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="15" name="Net-(U2-PadON/OFF)">
+      <node ref="U2" pin="ON/OFF"/>
+    </net>
+    <net code="16" name="Net-(U2-Pad33)">
+      <node ref="U2" pin="33"/>
+    </net>
+    <net code="17" name="/Mosfets and Sensors/pair2_out">
+      <node ref="U2" pin="40"/>
+      <node ref="Conn6" pin="2"/>
+    </net>
+    <net code="18" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad38)">
+      <node ref="U2" pin="38"/>
+    </net>
+    <net code="20" name="Net-(U2-Pad37)">
+      <node ref="U2" pin="37"/>
+    </net>
+    <net code="21" name="Net-(U2-Pad36)">
+      <node ref="U2" pin="36"/>
+    </net>
+    <net code="22" name="Net-(U2-Pad35)">
+      <node ref="U2" pin="35"/>
+    </net>
+    <net code="23" name="Net-(U2-Pad34)">
+      <node ref="U2" pin="34"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="25" name="Net-(U2-Pad32)">
+      <node ref="U2" pin="32"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad31)">
+      <node ref="U2" pin="31"/>
+    </net>
+    <net code="27" name="Net-(U2-Pad30)">
+      <node ref="U2" pin="30"/>
+    </net>
+    <net code="28" name="Net-(U2-Pad3.3V_1)">
+      <node ref="U2" pin="3.3V_2"/>
+      <node ref="U2" pin="3.3V_3"/>
+      <node ref="U2" pin="3.3V_1"/>
+    </net>
+    <net code="29" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="30" name="Net-(U2-Pad29)">
+      <node ref="U2" pin="29"/>
+    </net>
+    <net code="31" name="Net-(U2-PadR+)">
+      <node ref="U2" pin="R+"/>
+    </net>
+    <net code="32" name="Net-(U2-PadR)">
+      <node ref="U2" pin="R"/>
+    </net>
+    <net code="33" name="Net-(U2-PadPROGRAM)">
+      <node ref="U2" pin="PROGRAM"/>
+    </net>
+    <net code="34" name="Net-(U2-PadLED)">
+      <node ref="U2" pin="LED"/>
+    </net>
+    <net code="35" name="Net-(U2-PadD+)">
+      <node ref="U2" pin="D+"/>
+    </net>
+    <net code="36" name="Net-(U2-PadD)">
+      <node ref="U2" pin="D"/>
+    </net>
+    <net code="37" name="/Mosfets and Sensors/pair3_in">
+      <node ref="U6" pin="4"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="38" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="39" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="40" name="Net-(U2-Pad5V)">
+      <node ref="U2" pin="5V"/>
+    </net>
+    <net code="41" name="/Mosfets and Sensors/pair3_out">
+      <node ref="Conn9" pin="2"/>
+      <node ref="U2" pin="39"/>
+    </net>
+    <net code="42" name="/Mosfets and Sensors/pair1_out">
+      <node ref="U2" pin="41"/>
+      <node ref="Conn3" pin="2"/>
+    </net>
+    <net code="43" name="/Mosfets and Sensors/pair2_in">
+      <node ref="U5" pin="4"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="44" name="+12VA">
+      <node ref="Q3" pin="5"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U4" pin="8"/>
+      <node ref="Q1" pin="5"/>
+      <node ref="C9" pin="1"/>
+      <node ref="Conn2" pin="3"/>
+      <node ref="Q2" pin="5"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U6" pin="8"/>
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="45" name="/Mosfets and Sensors/pair1_in">
+      <node ref="U2" pin="2"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="46" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="47" name="Net-(J1-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="48" name="Net-(U2-Pad0)">
+      <node ref="U2" pin="0"/>
+    </net>
+    <net code="49" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="50" name="Net-(U2-Pad28)">
+      <node ref="U2" pin="28"/>
+    </net>
+    <net code="51" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="52" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="53" name="Net-(U2-Pad21)">
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="54" name="Net-(U2-Pad13)">
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="55" name="Net-(U2-Pad15)">
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="56" name="Net-(U2-Pad16)">
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="57" name="Net-(U2-Pad17)">
+      <node ref="U2" pin="17"/>
+    </net>
+    <net code="58" name="Net-(U2-Pad18)">
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="59" name="Net-(U2-Pad19)">
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="60" name="Net-(U2-Pad20)">
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="61" name="Net-(U2-Pad27)">
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="62" name="Net-(U2-Pad22)">
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="63" name="Net-(U2-Pad23)">
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="64" name="Net-(U2-Pad24)">
+      <node ref="U2" pin="24"/>
+    </net>
+    <net code="65" name="Net-(U2-Pad25)">
+      <node ref="U2" pin="25"/>
+    </net>
+    <net code="66" name="Net-(U2-Pad26)">
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="67" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="68" name="Net-(U2-Pad14)">
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="69" name="+5V">
+      <node ref="C4" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="70" name="+12V">
+      <node ref="Conn2" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="71" name="Net-(Q3-Pad4)">
+      <node ref="U6" pin="5"/>
+      <node ref="Q3" pin="4"/>
+    </net>
+    <net code="72" name="Net-(R3-Pad2)">
+      <node ref="U6" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="73" name="Net-(Conn10-Pad1)">
+      <node ref="Q3" pin="3"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="Conn10" pin="1"/>
+      <node ref="Conn11" pin="1"/>
+    </net>
+    <net code="74" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="75" name="Net-(Conn4-Pad1)">
+      <node ref="Conn4" pin="1"/>
+      <node ref="Conn5" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="76" name="Net-(Q1-Pad4)">
+      <node ref="U4" pin="5"/>
+      <node ref="Q1" pin="4"/>
+    </net>
+    <net code="77" name="Net-(C10-Pad1)">
+      <node ref="U5" pin="2"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="78" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="79" name="Net-(Conn7-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="Conn7" pin="1"/>
+      <node ref="Conn8" pin="1"/>
+    </net>
+    <net code="80" name="Net-(Q2-Pad4)">
+      <node ref="Q2" pin="4"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="81" name="Net-(C12-Pad1)">
+      <node ref="U6" pin="2"/>
+      <node ref="C12" pin="1"/>
+    </net>
+    <net code="82" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U5" pin="3"/>
+    </net>
+  </nets>
+</export>
