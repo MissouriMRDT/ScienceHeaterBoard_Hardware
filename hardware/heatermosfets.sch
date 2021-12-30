@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L hardware-rescue:LT1910-MRDT_ICs U?
+L MRDT_ICs:LT1910 U?
 U 1 1 618FC10F
 P 1500 1950
 AR Path="/618FC10F" Ref="U?"  Part="1" 
@@ -167,7 +167,7 @@ Wire Wire Line
 Text HLabel 950  1700 0    50   Input ~ 0
 pair1_in
 $Comp
-L hardware-rescue:LT1910-MRDT_ICs U?
+L MRDT_ICs:LT1910 U?
 U 1 1 619075B4
 P 5050 1950
 AR Path="/619075B4" Ref="U?"  Part="1" 
@@ -320,7 +320,7 @@ Wire Wire Line
 Text HLabel 4500 1700 0    50   Input ~ 0
 pair2_in
 $Comp
-L hardware-rescue:LT1910-MRDT_ICs U?
+L MRDT_ICs:LT1910 U?
 U 1 1 61917BE4
 P 8500 1950
 AR Path="/61917BE4" Ref="U?"  Part="1" 

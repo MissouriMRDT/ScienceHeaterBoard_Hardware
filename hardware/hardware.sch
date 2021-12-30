@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L hardware-rescue:AndersonPP-MRDT_Connectors Conn2
+L MRDT_Connectors:AndersonPP Conn2
 U 1 1 614D689F
 P 600 1000
 F 0 "Conn2" H 808 1387 60  0000 C CNN
@@ -90,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 6000 3900 6000
 $Comp
-L hardware-rescue:OKI-MRDT_Devices U1
+L MRDT_Devices:OKI U1
 U 1 1 615CF578
 P 2650 1150
 F 0 "U1" H 2700 1100 60  0001 C CNN
@@ -561,7 +561,7 @@ F 3 "" H 450 1350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L hardware-rescue:Teensy4.1_DEV-16771-MRDT_Shields U2
+L MRDT_Shields:Teensy4.1_DEV-16771 U2
 U 1 1 6158A854
 P 3100 4200
 F 0 "U2" H 3100 6367 50  0000 C CNN
