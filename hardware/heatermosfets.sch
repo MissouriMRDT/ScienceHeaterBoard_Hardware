@@ -142,7 +142,7 @@ $EndComp
 Wire Wire Line
 	1900 2750 1900 2600
 Wire Wire Line
-	950  1700 1300 1700
+	850  1700 950  1700
 Text Notes 1600 1200 0    59   ~ 12
 Gate Driver
 Connection ~ 2550 2600
@@ -164,7 +164,7 @@ Wire Wire Line
 	2700 1950 2700 1850
 Wire Wire Line
 	3900 1000 3900 1450
-Text HLabel 950  1700 0    50   Input ~ 0
+Text HLabel 850  1700 0    50   Input ~ 0
 pair1_in
 $Comp
 L MRDT_ICs:LT1910 U?
@@ -295,7 +295,7 @@ $EndComp
 Wire Wire Line
 	5450 2750 5450 2600
 Wire Wire Line
-	4500 1700 4850 1700
+	4400 1700 4500 1700
 Text Notes 5150 1200 0    59   ~ 12
 Gate Driver
 Connection ~ 6100 2600
@@ -317,7 +317,7 @@ Wire Wire Line
 	6250 1950 6250 1850
 Wire Wire Line
 	7450 1000 7450 1450
-Text HLabel 4500 1700 0    50   Input ~ 0
+Text HLabel 4400 1700 0    50   Input ~ 0
 pair2_in
 $Comp
 L MRDT_ICs:LT1910 U?
@@ -448,7 +448,7 @@ $EndComp
 Wire Wire Line
 	8900 2750 8900 2600
 Wire Wire Line
-	7950 1700 8300 1700
+	7850 1700 7950 1700
 Text Notes 8600 1200 0    59   ~ 12
 Gate Driver
 Connection ~ 9550 2600
@@ -470,7 +470,7 @@ Wire Wire Line
 	9700 1950 9700 1850
 Wire Wire Line
 	10900 1000 10900 1450
-Text HLabel 7950 1700 0    50   Input ~ 0
+Text HLabel 7850 1700 0    50   Input ~ 0
 pair3_in
 Wire Wire Line
 	7150 1000 7150 1450
@@ -740,10 +740,10 @@ Wire Wire Line
 Text Notes 10950 3150 0    39   ~ 0
 Temp. Sensor
 $Comp
-L power:+12VA #PWR?
+L power:+12VA #PWR015
 U 1 1 6190F302
 P 2550 1450
-F 0 "#PWR?" H 2550 1300 50  0001 C CNN
+F 0 "#PWR015" H 2550 1300 50  0001 C CNN
 F 1 "+12VA" H 2565 1623 50  0000 C CNN
 F 2 "" H 2550 1450 50  0001 C CNN
 F 3 "" H 2550 1450 50  0001 C CNN
@@ -751,10 +751,10 @@ F 3 "" H 2550 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR?
+L power:+12VA #PWR020
 U 1 1 61912CB5
 P 6100 1450
-F 0 "#PWR?" H 6100 1300 50  0001 C CNN
+F 0 "#PWR020" H 6100 1300 50  0001 C CNN
 F 1 "+12VA" H 6115 1623 50  0000 C CNN
 F 2 "" H 6100 1450 50  0001 C CNN
 F 3 "" H 6100 1450 50  0001 C CNN
@@ -762,14 +762,128 @@ F 3 "" H 6100 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR?
+L power:+12VA #PWR025
 U 1 1 61913A07
 P 9550 1450
-F 0 "#PWR?" H 9550 1300 50  0001 C CNN
+F 0 "#PWR025" H 9550 1300 50  0001 C CNN
 F 1 "+12VA" H 9565 1623 50  0000 C CNN
 F 2 "" H 9550 1450 50  0001 C CNN
 F 3 "" H 9550 1450 50  0001 C CNN
 	1    9550 1450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7950 1700 7950 1850
+Wire Wire Line
+	7950 1850 7800 1850
+Connection ~ 7950 1700
+Wire Wire Line
+	7950 1700 8300 1700
+Wire Wire Line
+	7800 2550 7800 2600
+Wire Wire Line
+	7800 2600 8100 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	4500 1850 4350 1850
+Wire Wire Line
+	4500 1700 4500 1850
+Connection ~ 4500 1700
+Wire Wire Line
+	4500 1700 4850 1700
+Wire Wire Line
+	4350 2550 4350 2600
+Wire Wire Line
+	4350 2600 4650 2600
+Connection ~ 4650 2600
+Wire Wire Line
+	950  1700 950  1850
+Wire Wire Line
+	950  1850 800  1850
+Connection ~ 950  1700
+Wire Wire Line
+	950  1700 1300 1700
+Wire Wire Line
+	800  2550 800  2600
+Wire Wire Line
+	800  2600 1100 2600
+Connection ~ 1100 2600
+$Comp
+L Device:LED D5
+U 1 1 6228CFC5
+P 7800 2400
+F 0 "D5" V 7800 2300 50  0000 R CNN
+F 1 "LED" V 7700 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7800 2400 50  0001 C CNN
+F 3 "~" H 7800 2400 50  0001 C CNN
+	1    7800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 6228DEBB
+P 4350 2400
+F 0 "D4" V 4350 2300 50  0000 R CNN
+F 1 "LED" V 4250 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4350 2400 50  0001 C CNN
+F 3 "~" H 4350 2400 50  0001 C CNN
+	1    4350 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6228F1AF
+P 800 2400
+F 0 "D3" V 800 2300 50  0000 R CNN
+F 1 "LED" V 700 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 800 2400 50  0001 C CNN
+F 3 "~" H 800 2400 50  0001 C CNN
+	1    800  2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  1850 800  1900
+Wire Wire Line
+	4350 1850 4350 1900
+Wire Wire Line
+	7800 1850 7800 1900
+$Comp
+L Device:R R10
+U 1 1 623BB9D6
+P 800 2050
+F 0 "R10" H 870 2096 50  0000 L CNN
+F 1 "120" H 870 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 730 2050 50  0001 C CNN
+F 3 "~" H 800 2050 50  0001 C CNN
+	1    800  2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  2200 800  2250
+$Comp
+L Device:R R11
+U 1 1 623CE605
+P 4350 2050
+F 0 "R11" H 4420 2096 50  0000 L CNN
+F 1 "120" H 4420 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4280 2050 50  0001 C CNN
+F 3 "~" H 4350 2050 50  0001 C CNN
+	1    4350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2200 4350 2250
+$Comp
+L Device:R R12
+U 1 1 623D346B
+P 7800 2050
+F 0 "R12" H 7870 2096 50  0000 L CNN
+F 1 "120" H 7870 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7730 2050 50  0001 C CNN
+F 3 "~" H 7800 2050 50  0001 C CNN
+	1    7800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2200 7800 2250
 $EndSCHEMATC
