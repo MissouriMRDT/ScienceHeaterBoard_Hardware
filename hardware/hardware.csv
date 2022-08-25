@@ -1,38 +1,56 @@
-Reference, Value, Footprint
-Conn2,AndersonPP,MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side
-U1,OKI,MRDT_Devices:OKI_Horizontal
-C2,22uF 50V,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C3,10uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C4,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C5,22uF 50V,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C6,10uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C7,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-U3,OKI-78SR-3.3_1.5-W36H-C,Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Horizontal
-U2,Teensy4.1_DEV-16771,MRDT_Shields:Teensy_4_1_Vertical
-J2,RJ45_LED_Shielded,MRDT_Connectors:RJ45_Teensy
-C1,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-J1,6P6C,Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical
-U4,LT1910,Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm
-C8,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C9,10uF 50V,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-R1,5.1k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
-Q1,BUK7M33-60EX,Package_TO_SOT_SMD:LFPAK33
-U5,LT1910,Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm
-C10,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C11,10uF 50V,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-R2,5.1k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
-Q2,BUK7M33-60EX,Package_TO_SOT_SMD:LFPAK33
-U6,LT1910,Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm
-C12,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-C13,10uF 50V,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
-R3,5.1k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
-Q3,BUK7M33-60EX,Package_TO_SOT_SMD:LFPAK33
-Conn4,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn5,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn7,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn8,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn10,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn11,Molex_uF_S_02,MRDT_Connectors:MOLEX_uF_S_02_Horizontal
-Conn3,Molex_uF_S_03,MRDT_Connectors:MOLEX_uF_S_03_Horizontal
-Conn6,Molex_uF_S_03,MRDT_Connectors:MOLEX_uF_S_03_Horizontal
-Conn9,Molex_uF_S_03,MRDT_Connectors:MOLEX_uF_S_03_Horizontal
+Reference, Value, Footprint, Datasheet, MANUFACTURER, MAXIMUM_PACKAGE_HEIGHT, PARTREV, STANDARD
+"Conn2","AndersonPP","MRDT_Connectors:Anderson_3_Horizontal_Side_by_Side",""
+"U1","OKI","MRDT_Devices:OKI_Horizontal",""
+"C2","22uF 50V","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C3","10uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C4","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C5","22uF 50V","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C6","10uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C7","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"U3","OKI-78SR-3.3_1.5-W36H-C","Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Horizontal","https://power.murata.com/data/power/oki-78sr.pdf"
+"J2","RJ45_LED_Shielded","MRDT_Connectors:RJ45_Teensy","~"
+"C1","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"J1","6P6C","Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical","~"
+"D1","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D2","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D6","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D7","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D8","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"U2","Teensy4.1_DEV-16771","MRDT_Shields:Teensy_4_1_Vertical","","SparkFun Electronics","4.07mm","4.1","Manufacturer recommendations"
+"R5","300","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R6","120","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"D9","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"R4","1000","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R9","120","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R8","120","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R7","120","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"U4","LT1910","Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm",""
+"C8","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C9","10uF 50V","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"R1","5.1k","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"Q1","BUK7M33-60EX","Package_TO_SOT_SMD:LFPAK33","https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf"
+"U5","LT1910","Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm",""
+"C10","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C11","10uF 50V","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"R2","5.1k","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"Q2","BUK7M33-60EX","Package_TO_SOT_SMD:LFPAK33","https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf"
+"U6","LT1910","Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm",""
+"C12","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"C13","10uF 50V","Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder","~"
+"R3","5.1k","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"Q3","BUK7M33-60EX","Package_TO_SOT_SMD:LFPAK33","https://assets.nexperia.com/documents/data-sheet/BUK7M33-60E.pdf"
+"Conn4","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn5","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn7","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn8","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn10","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn11","Molex_uF_S_02","MRDT_Connectors:MOLEX_uF_S_02_Horizontal",""
+"Conn3","Molex_uF_S_03","MRDT_Connectors:MOLEX_uF_S_03_Horizontal",""
+"Conn6","Molex_uF_S_03","MRDT_Connectors:MOLEX_uF_S_03_Horizontal",""
+"Conn9","Molex_uF_S_03","MRDT_Connectors:MOLEX_uF_S_03_Horizontal",""
+"D5","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D4","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"D3","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"R10","1000","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R11","1000","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
+"R12","1000","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~"
