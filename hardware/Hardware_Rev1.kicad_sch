@@ -1,0 +1,21 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 8e09daad-348e-4f79-9fc2-e198808873c3)
+
+  (paper "A4")
+
+  (title_block
+    (title "Heater Board - Rev1")
+    (rev "1")
+    (company "James Elverson, Katie McNevin, Joshua Perkins")
+    (comment 4 "MRDT")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
