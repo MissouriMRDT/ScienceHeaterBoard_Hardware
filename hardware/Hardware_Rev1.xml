@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\joshd\OneDrive\Documents\GitHub\ScienceHeater-Hardware\hardware\Hardware_Rev1.kicad_sch</source>
-    <date>9/20/2022 3:07:06 PM</date>
+    <date>9/20/2022 4:31:07 PM</date>
     <tool>Eeschema (6.0.7)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -143,6 +143,7 @@
     </comp>
     <comp ref="Conn1">
       <value>AndersonPP</value>
+      <footprint>MRDT_Connectors:Anderson_2_Horizontal_Side_by_Side</footprint>
       <libsource lib="MRDT_Connectors" part="AndersonPP" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -232,6 +233,7 @@
     </comp>
     <comp ref="D1">
       <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -258,6 +260,7 @@
     </comp>
     <comp ref="D4">
       <value>LED(R)</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -266,6 +269,7 @@
     </comp>
     <comp ref="D5">
       <value>LED(R)</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -283,6 +287,7 @@
     </comp>
     <comp ref="D7">
       <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -291,6 +296,7 @@
     </comp>
     <comp ref="D8">
       <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -299,6 +305,7 @@
     </comp>
     <comp ref="D9">
       <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -372,7 +379,8 @@
       <tstamps>2ab54593-1af2-4560-8ac6-98d89b971803</tstamps>
     </comp>
     <comp ref="R3">
-      <value>R</value>
+      <value>1000</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -399,6 +407,7 @@
     </comp>
     <comp ref="R6">
       <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -416,6 +425,7 @@
     </comp>
     <comp ref="R8">
       <value>300</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -433,6 +443,7 @@
     </comp>
     <comp ref="R10">
       <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -441,6 +452,7 @@
     </comp>
     <comp ref="R11">
       <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -449,6 +461,7 @@
     </comp>
     <comp ref="R12">
       <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Hardware_Rev1.kicad_sch"/>
@@ -504,7 +517,7 @@
     </comp>
     <comp ref="U6">
       <value>Teensy4.1_DEV-16771</value>
-      <footprint>MODULE_DEV-16771</footprint>
+      <footprint>MRDT_Shields:Teensy_4_1_Vertical</footprint>
       <fields>
         <field name="MANUFACTURER">SparkFun Electronics</field>
         <field name="MAXIMUM_PACKAGE_HEIGHT">4.07mm</field>
@@ -861,6 +874,15 @@
     </library>
     <library logical="Device">
       <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="MRDT_Connectors">
+      <uri>C:\Users\joshd\OneDrive\Documents\GitHub\MRDT_KiCAD_Libraries/Symbols/MRDT_Connectors.lib</uri>
+    </library>
+    <library logical="MRDT_ICs">
+      <uri>C:\Users\joshd\OneDrive\Documents\GitHub\MRDT_KiCAD_Libraries/Symbols/MRDT_ICs.lib</uri>
+    </library>
+    <library logical="MRDT_Shields">
+      <uri>C:\Users\joshd\OneDrive\Documents\GitHub\MRDT_KiCAD_Libraries/Symbols/MRDT_Shields.lib</uri>
     </library>
     <library logical="Regulator_Switching">
       <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Switching.kicad_sym</uri>
