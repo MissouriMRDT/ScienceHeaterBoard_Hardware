@@ -3218,13 +3218,13 @@
   (symbol (lib_id "MRDT_Devices:OKI") (at 64.135 24.765 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1a6178a5-56d4-4943-9131-ec94d86ded73)
-    (property "Reference" "U?" (id 0) (at 65.405 26.035 0)
+    (property "Reference" "U3" (id 0) (at 65.405 26.035 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Value" "OKI" (id 1) (at 69.215 17.78 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "" (id 2) (at 59.055 27.305 0)
+    (property "Footprint" "MRDT_Devices:OKI_Horizontal" (id 2) (at 59.055 27.305 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 59.055 27.305 0)
@@ -3550,11 +3550,11 @@
     (property "Datasheet" "" (id 3) (at 12.7 41.91 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (pin "1" (uuid 52b277c2-d778-49e0-980a-359a50bdd659))
+    (pin "1" (uuid 52b277c2-d778-49e0-980a-359a50bdd65a))
     (pin "2" (uuid 38eda20b-0e0d-4af4-8284-1e9d57b212d6))
     (pin "3" (uuid df1e1f53-2b9e-41f2-b226-491e4c5eb7b3))
     (pin "4" (uuid dffde561-2f6e-41b7-95ed-469e5044eada))
-    (pin "1" (uuid 52b277c2-d778-49e0-980a-359a50bdd659))
+    (pin "1" (uuid 52b277c2-d778-49e0-980a-359a50bdd65a))
   )
 
   (symbol (lib_id "Transistor_FET:BUK7M33-60EX") (at 72.39 135.255 0) (unit 1)
@@ -4092,11 +4092,11 @@
     (property "Datasheet" "" (id 3) (at 12.7 58.42 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (pin "1" (uuid 94390103-90b1-482e-a360-2c2c153ad0f8))
+    (pin "1" (uuid 94390103-90b1-482e-a360-2c2c153ad0f9))
     (pin "2" (uuid 0b9e8d72-0a16-452f-b584-ffbfdd1d77fc))
     (pin "3" (uuid 1540a31f-94dc-4d38-9639-32f787ad533b))
     (pin "4" (uuid ad376e5d-1606-4f32-80af-16194ba98c11))
-    (pin "1" (uuid 94390103-90b1-482e-a360-2c2c153ad0f8))
+    (pin "1" (uuid 94390103-90b1-482e-a360-2c2c153ad0f9))
   )
 
   (symbol (lib_id "Device:LED") (at 102.235 28.575 90) (unit 1)
@@ -4723,6 +4723,9 @@
     (path "/9885c2a7-2fe3-498f-93b5-6afd976ad6fa"
       (reference "U2") (unit 1) (value "LT1910") (footprint "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm")
     )
+    (path "/1a6178a5-56d4-4943-9131-ec94d86ded73"
+      (reference "U3") (unit 1) (value "OKI") (footprint "MRDT_Devices:OKI_Horizontal")
+    )
     (path "/8888de4f-f17b-426c-96cc-2a5b2b6f6803"
       (reference "U4") (unit 1) (value "LT1910") (footprint "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm")
     )
@@ -4731,9 +4734,6 @@
     )
     (path "/165afba2-0703-4f13-aa69-df8fca3cdcf1"
       (reference "U6") (unit 1) (value "Teensy4.1_DEV-16771") (footprint "MRDT_Shields:Teensy_4_1_Vertical")
-    )
-    (path "/1a6178a5-56d4-4943-9131-ec94d86ded73"
-      (reference "U?") (unit 1) (value "OKI") (footprint "")
     )
   )
 )
