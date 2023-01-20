@@ -396,7 +396,7 @@
       "idf": "",
       "netlist": "hardware.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../documentation/Hardware_Rev1.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
